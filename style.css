@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", Gotham, gotham, Tahoma, Geneva, sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 120%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+.properties {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 1em;
+}
+
+#map {
+  background-image: url("bla.png");
+}
+
+/* .properties > div {
+  border: solid black 1px;
+  border-bottom: solid blue 3px;
+} */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.address {
+  padding-top: 10px;
+  font-size: 80%;
+}
+
+.property img {
+  width: 100%;
+  height: 250px;
+}
+
+.priceGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.roundDot {
+  border-radius: 50%;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  margin: auto;
+}
+
+.saler {
+  display: grid;
+  grid-template-columns: 0.1fr 2fr;
+  justify-content: center;
+}
+
+.property {
+  background: #fff;
+  border-bottom: 4px solid #006aff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}

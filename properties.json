@@ -1,0 +1,47 @@
+{
+  "P1": {
+    "image": "1.jpg",
+    "price": 485000,
+    "beds": 2,
+    "bath": 2,
+    "meters": 120,
+    "address": "1901 Merrill Creek Pkwy, Everett, WA 98203",
+    "saler": "For sale by owner"
+  },
+  "P2": {
+    "image": "2.jpg",
+    "price": 4555000,
+    "beds": 3,
+    "bath": 1,
+    "meters": 150,
+    "address": "4740 32nd Ave S, Seattle, WA 98118",
+    "saler": "House for sale"
+  },
+  "P3": {
+    "image": "3.jpg",
+    "price": 500000,
+    "beds": 1,
+    "bath": 1,
+    "meters": 50,
+    "address": "19310 25th Ave SE, Bothell, WA 98012",
+    "saler": "For sale by owner"
+  },
+  "P4": {
+    "image": "4.jpg",
+    "price": 488000,
+    "beds": 4,
+    "bath": 3,
+    "meters": 250,
+    "address": "2690 152nd Ave Ne, Redmond, WA 98052",
+    "saler": "House for sale"
+  },
+  "P5": {
+    "image": "5.jpg",
+    "price": 450000,
+    "beds": 1,
+    "bath": 1,
+    "meters": 60,
+    "address": "6821 Udall Pl Se, Auburn, WA 98092",
+    "saler": "House for sale"
+  }
+}
