@@ -1,0 +1,74 @@
+[
+    {
+        "email": "bjarne@bjarne.com",
+        "name": "Bjarne",
+        "lastName": "Bjarne",
+        "password": "12345678",
+        "userType": "agent",
+        "id": "5d77e81b85fc2"
+    },
+    {
+        "email": "ass@sdj.fj",
+        "name": "dik",
+        "lastName": "pol",
+        "password": "asdsasdd",
+        "userType": "agent",
+        "id": "5d78922c8b2ef"
+    },
+    {
+        "email": "sdsd@sdkd.hg",
+        "name": "sdsd",
+        "lastName": "sdsd",
+        "password": "12345677",
+        "userType": "agent",
+        "id": "5d78cc1ddc407"
+    },
+    {
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "h@b.dk",
+        "password": "12345aaa",
+        "userType": "agent",
+        "id": "5d7931b5bd92e"
+    },
+    {
+        "email": "qqq@asj.gh",
+        "name": "qqq",
+        "lastName": "qqq",
+        "password": "12345656",
+        "userType": "user",
+        "id": "5d77dccb27452"
+    },
+    {
+        "email": "dfdf@dhdj.gh",
+        "name": "dfdfd",
+        "lastName": "dfdf",
+        "password": "12345667",
+        "userType": "user",
+        "id": "5d78cb9a1f4ab"
+    },
+    {
+        "email": "dsdsd@sdsd.gk",
+        "name": "sdsd",
+        "lastName": "sdsd",
+        "password": "qwerrtty",
+        "userType": "user",
+        "id": "5d78cbcfd30f5"
+    },
+    {
+        "name": "dan",
+        "lastName": "dddd",
+        "email": "h@b.dk",
+        "password": "sddffghj",
+        "userType": "agent",
+        "id": "5d793aa7ecd9d"
+    },
+    {
+        "name": "sdar",
+        "lastName": "sder",
+        "email": "h@sd.dj",
+        "password": "qwweeert",
+        "userType": "agent",
+        "id": "5d793da93ae50"
+    }
+]
