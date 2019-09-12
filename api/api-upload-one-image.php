@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-print_r($_FILES);
+// print_r($_FILES);
 $aAllowedExtensions = ['gif', 'jpg', 'jpeg', 'png'];
 $extension = pathinfo($_FILES['img']['name'])['extension'];
 $extension = strtolower($extension);
@@ -11,8 +11,6 @@ if (!in_array($extension, $aAllowedExtensions)) {
 $sUniqueImageName = uniqid() . '.' . $extension;
 
 move_uploaded_file($_FILES['img']['tmp_name'], __DIR__ . "/../img/$sUniqueImageName");
-
-
 
 $_SESSION['user']->img = $sUniqueImageName;
 
@@ -28,7 +26,9 @@ foreach ($jUsers as $jUser) {
     $sjUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
     file_put_contents(__DIR__ . '/../data/users.json', $sjUsers);
     $userImg = $jUser->img;
-    echo  $jUser;
+    // echo $userImg;
+    echo json_encode($jUser);
+    // echo "success";
   }
 }
 

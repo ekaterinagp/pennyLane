@@ -28,15 +28,7 @@ if (!$_SESSION) {
 
 <body>
   <?php require_once(__DIR__ . '/components/nav.php'); ?>
-  <!-- 
-  <h1>Welcome Honey</h1>
-  <h2> id : </h2>
-  <h2>email:</h2>
-  <div class="fullName">
-    <h2>name:</h2>
-    <h2>last name:</h2>
-  </div>
-  <img src="img/a.png" alt=""> -->
+
   <div class="gridContainer">
     <div id="profileContainer">
       <?php
@@ -48,7 +40,7 @@ if (!$_SESSION) {
     <h2>name: ' . $_SESSION['user']->name . '</h2>
     <h2>last name: ' . $_SESSION['user']->lastName . '</h2>
   </div>
-  <img id="imgProfile" src="img/' . $_SESSION['user']->img . '" alt=""> <form method="POST" id="uploadImg" ><input type="file" name="img"  /><button  >Upload image</button></form>
+  <img id="imgProfile" src="img/' . $_SESSION['user']->img . '" alt=""> <form  enctype="multipart/form-data" method="POST" id="uploadImg" ><input type="file" name="img" /><button  >Upload image</button></form>
   
   ';
 
