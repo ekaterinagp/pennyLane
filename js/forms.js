@@ -1,16 +1,53 @@
 let signUpForm = document.querySelector("#signupForm");
-let allInputs = signUpForm.querySelectorAll("input");
+// let allInputs = signUpForm.querySelectorAll("input");
 
-allInputs.forEach(input => {
-  input.addEventListener("input", function() {
-    // console.log(form.checkValidity());
-    if (signUpForm.checkValidity()) {
-      signUpForm.querySelector("button").removeAttribute("disabled");
-    } else {
-      signUpForm.querySelector("button").setAttribute("disabled", true);
-    }
+// let logInForm = document.querySelector("#loginForm");
+// let allLoginFields = logInForm.querySelectorAll("input");
+
+// allInputs.forEach(input => {
+//   input.addEventListener("input", function() {
+//     // console.log(form.checkValidity());
+//     if (signUpForm.checkValidity()) {
+//       signUpForm.querySelector("button").removeAttribute("disabled");
+//     } else {
+//       signUpForm.querySelector("button").setAttribute("disabled", true);
+//     }
+//   });
+// });
+
+// allInputs.forEach(input => {
+//   input.addEventListener("input", function() {
+//     // console.log(form.checkValidity());
+//     if (logInForm.checkValidity()) {
+//       logInForm.querySelector("button").removeAttribute("disabled");
+//     } else {
+//       logInForm.querySelector("button").setAttribute("disabled", true);
+//     }
+//   });
+// });
+
+function checkIfFormValid(idForm) {
+  console.log({ idForm });
+  let form = document.querySelector(idForm);
+  console.log({ form });
+  let allInputs = document.querySelectorAll("input");
+  allInputs.forEach(input => {
+    input.addEventListener("input", function() {
+      // console.log(form.checkValidity());
+      if (form.checkValidity()) {
+        form.querySelector("button").removeAttribute("disabled");
+      } else {
+        form.querySelector("button").setAttribute("disabled", true);
+      }
+    });
   });
-});
+}
+if (document.querySelector("#signupForm")) {
+  checkIfFormValid("#signupForm");
+}
+if (document.querySelector("#loginForm")) {
+  checkIfFormValid("#loginForm");
+}
 
 function fvIsEmailAvailable(oElement) {
   console.log({ oElement });

@@ -1,0 +1,59 @@
+[
+  {
+    "price": 34000,
+    "img": "5d7a35b735765.jpg",
+    "address": "Ryparken 21B",
+    "zip": "2100",
+    "agentName": "Honey Bunny",
+    "agentID": "5d7931b5bd92e",
+    "id": "5d7a35b735d35",
+    "marker": {
+      "geometry": {
+        "coordinates": [12.525513, 55.711585],
+        "type": "Point"
+      },
+      "properties": {
+        "iconSize": [60, 60]
+      },
+      "type": "Feature"
+    }
+  },
+  {
+    "price": 23000,
+    "img": "5d7a40868b713.jpg",
+    "address": "Faelledvej 17B 2tv",
+    "zip": "2200",
+    "agentName": "Honey Bunny",
+    "agentID": "5d7931b5bd92e",
+    "id": "5d7a40868bc45",
+    "marker": {
+      "geometry": {
+        "coordinates": [12.556166, 55.705004],
+        "type": "Point"
+      },
+      "properties": {
+        "iconSize": [60, 60]
+      },
+      "type": "Feature"
+    }
+  },
+  {
+    "price": 32000,
+    "img": "5d7a44234174d.jpg",
+    "address": "Tagensvej 109B 1th",
+    "zip": "2200",
+    "agentName": "Honey Bunny",
+    "agentID": "5d7931b5bd92e",
+    "id": "5d7a442341c72",
+    "marker": {
+      "geometry": {
+        "coordinates": [12.435513, 55.728585],
+        "type": "Point"
+      },
+      "properties": {
+        "iconSize": [60, 60]
+      },
+      "type": "Feature"
+    }
+  }
+]

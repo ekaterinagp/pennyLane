@@ -7,3 +7,48 @@ var map = new mapboxgl.Map({
   style: "mapbox://styles/ekaterinagp/ck0c6kwbx02us1cqe0vcj6zti"
 });
 map.addControl(new mapboxgl.NavigationControl());
+
+function fetchData() {
+  fetch("data/properties.json")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+      console.log({ response });
+      fillInMarkers(response);
+    });
+}
+
+fetchData();
+
+function fillInMarkers(properties) {
+  for (let i = 0; i < properties.length; i++) {
+    console.log(properties[i]);
+    var el = document.createElement("a");
+    el.href = "#V-" + properties[i].id;
+    el.className = "marker";
+    el.style.backgroundImage = "url(img/a.png)";
+    el.style.width = "60px";
+    el.style.height = "60px";
+    el.id = properties[i].id;
+    console.log({ properties });
+    console.log(properties[i].marker.geometry.coordinates);
+    new mapboxgl.Marker(el)
+      .setLngLat(properties[i].marker.geometry.coordinates)
+      .addTo(map);
+
+    el.addEventListener("click", function() {
+      console.log(`Highlight property with ID ${this.id} `);
+
+      removeActive();
+      document.getElementById(this.id).classList.add("active");
+      document.getElementById("V-" + this.id).classList.add("active");
+    });
+  }
+}
+
+function removeActive() {
+  document.querySelectorAll(".active").forEach(name => {
+    name.classList.remove("active");
+  });
+}

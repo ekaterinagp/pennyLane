@@ -69,6 +69,7 @@ if ($_POST) {
   $user->email = $strEmail;
   $user->password = $strPassword;
   $user->userType = $strUserType;
+  $user->img = "img/default.png";
   $user->id = uniqid();
 
 
@@ -91,11 +92,7 @@ function sendErrorMessage($txtError, $iLineNumber)
   exit;
 }
 
-// function checkIfEmailAvailable(){
-//   $sDataUsers = file_get_contents(__DIR__ . '/data/users.json');
-//   $jDataUsers = json_decode($sDataUsers);
 
-// }
 
 ?>
 

@@ -20,7 +20,30 @@
 
   <div id="map_properties">
     <div id="map"></div>
-    <div id="properties"></div>
+    <div id="properties">
+
+      <?php
+      $sjProperties = file_get_contents(__DIR__ . '/data/properties.json');
+      $jProperties = json_decode($sjProperties);
+      $strBluePrint = '<div class="property" id="V-{{id}}">
+    <div>PRICE {{price}} dkk</div>
+    <img src="img\{{path}}">
+    <div>ADDRESS {{address}}</div>
+        <div>ZIP {{zip}}</div>
+    
+  </div>';
+      foreach ($jProperties as $jProperty) {
+        $sCopyBluePrint = $strBluePrint;
+        $sCopyBluePrint = str_replace('{{price}}', $jProperty->price, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{path}}', $jProperty->img, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{id}}', $jProperty->id, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{address}}', $jProperty->address, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{zip}}', $jProperty->zip, $sCopyBluePrint);
+        echo $sCopyBluePrint;
+      }
+      ?>
+
+    </div>
   </div>
   <script src="js/app.js"></script>
 </body>

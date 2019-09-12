@@ -29,7 +29,8 @@
         "email": "h@b.dk",
         "password": "12345aaa",
         "userType": "agent",
-        "id": "5d7931b5bd92e"
+        "id": "5d7931b5bd92e",
+        "img": "5d7a1479756aa.jpg"
     },
     {
         "email": "qqq@asj.gh",
@@ -54,14 +55,6 @@
         "password": "qwerrtty",
         "userType": "user",
         "id": "5d78cbcfd30f5"
-    },
-    {
-        "name": "dan",
-        "lastName": "dddd",
-        "email": "h@b.dk",
-        "password": "sddffghj",
-        "userType": "agent",
-        "id": "5d793aa7ecd9d"
     },
     {
         "name": "sdar",
