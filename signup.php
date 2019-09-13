@@ -69,7 +69,7 @@ if ($_POST) {
   $user->email = $strEmail;
   $user->password = $strPassword;
   $user->userType = $strUserType;
-  $user->img = "img/default.png";
+  $user->img = 'default.png';
   $user->id = uniqid();
 
 

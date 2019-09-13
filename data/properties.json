@@ -1,59 +1,314 @@
 [
-  {
-    "price": 34000,
-    "img": "5d7a35b735765.jpg",
-    "address": "Ryparken 21B",
-    "zip": "2100",
-    "agentName": "Honey Bunny",
-    "agentID": "5d7931b5bd92e",
-    "id": "5d7a35b735d35",
-    "marker": {
-      "geometry": {
-        "coordinates": [12.525513, 55.711585],
-        "type": "Point"
-      },
-      "properties": {
-        "iconSize": [60, 60]
-      },
-      "type": "Feature"
+    {
+        "price": 34000,
+        "img": "5d7a35b735765.jpg",
+        "address": "Ryparken 21B",
+        "zip": "2100",
+        "agentName": "Honey Bunny",
+        "agentID": "5d7931b5bd92e",
+        "id": "5d7a35b735d35",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.525513,
+                    55.711585
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 23000,
+        "img": "5d7a40868b713.jpg",
+        "address": "Faelledvej 17B 2tv",
+        "zip": "2200",
+        "agentName": "Honey Bunny",
+        "agentID": "5d7931b5bd92e",
+        "id": "5d7a40868bc45",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.556166,
+                    55.705004
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 32000,
+        "img": "5d7a44234174d.jpg",
+        "address": "Tagensvej 109B 1th",
+        "zip": "2200",
+        "agentName": "Honey Bunny",
+        "agentID": "5d7931b5bd92e",
+        "id": "5d7a442341c72",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.435513,
+                    55.728585
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 23000,
+        "img": "5d7b2c9fe2497.jpg",
+        "address": "Norre Alle, 66",
+        "zip": "2400",
+        "agentName": "Dan Dan",
+        "agentID": "5d7b2b74886ce",
+        "id": "5d7b2c9fe360a",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.555242,
+                    55.724316
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 450000,
+        "img": "5d7b2cbc9e64a.jpg",
+        "address": "Christoffers Alle, 73",
+        "zip": "3400",
+        "agentName": "Dan Dan",
+        "agentID": "5d7b2b74886ce",
+        "id": "5d7b2cbc9f422",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.125509,
+                    55.728148
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 30005,
+        "img": "5d7b2d72a0e8a.jpg",
+        "address": "Rentmestervej 15",
+        "zip": "2400",
+        "agentName": "John Awsome",
+        "agentID": "5d7b2d03c710b",
+        "id": "5d7b2d72a1800",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.555162,
+                    55.71038
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 80000000,
+        "img": "5d7b2d98a6f70.jpg",
+        "address": "Lygten, 55",
+        "zip": "2400",
+        "agentName": "John Awsome",
+        "agentID": "5d7b2d03c710b",
+        "id": "5d7b2d98a7633",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.4335837,
+                    55.7128208
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 247080,
+        "img": "5d7b2ddf3812e.jpg",
+        "address": "Kulturvej 12",
+        "zip": "4450",
+        "agentName": "John Awsome",
+        "agentID": "5d7b2d03c710b",
+        "id": "5d7b2ddf385ed",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.433263,
+                    55.331126
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 35000000,
+        "img": "5d7b307180d59.jpg",
+        "address": "Vejvejvej 33",
+        "zip": "2400",
+        "agentName": "Peter Peterson",
+        "agentID": "5d7b302ac80a6",
+        "id": "5d7b30718132d",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.555323,
+                    55.704673
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": "2345667",
+        "img": [
+            "5d7b4150cd896.jpg",
+            "5d7b4150ce0a0.jpg",
+            "5d7b4150ceb39.jpg"
+        ],
+        "address": "Guldbergsgade, 44",
+        "zip": "2200",
+        "agentName": "wan wan",
+        "agentID": "5d7b3ee326e85",
+        "id": "5d7b4150cf0ab",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.555135,
+                    55.704134
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 1111111,
+        "img": [
+            "5d7b4645a69db.jpg",
+            "5d7b4645a70f4.jpg",
+            "5d7b4645a79d9.jpg"
+        ],
+        "address": "sdfh",
+        "zip": "1234",
+        "agentName": "wan wan",
+        "agentID": "5d7b3ee326e85",
+        "id": "5d7b4645a7e2f",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.555871,
+                    55.704667
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 1000000,
+        "img": [
+            "5d7b4667dded9.jpg",
+            "5d7b4667de338.jpg",
+            "5d7b4667de878.jpg"
+        ],
+        "address": "dortevej,13",
+        "zip": "2200",
+        "agentName": "wan wan",
+        "agentID": "5d7b3ee326e85",
+        "id": "5d7b4667df60f",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.555817,
+                    55.704896
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
     }
-  },
-  {
-    "price": 23000,
-    "img": "5d7a40868b713.jpg",
-    "address": "Faelledvej 17B 2tv",
-    "zip": "2200",
-    "agentName": "Honey Bunny",
-    "agentID": "5d7931b5bd92e",
-    "id": "5d7a40868bc45",
-    "marker": {
-      "geometry": {
-        "coordinates": [12.556166, 55.705004],
-        "type": "Point"
-      },
-      "properties": {
-        "iconSize": [60, 60]
-      },
-      "type": "Feature"
-    }
-  },
-  {
-    "price": 32000,
-    "img": "5d7a44234174d.jpg",
-    "address": "Tagensvej 109B 1th",
-    "zip": "2200",
-    "agentName": "Honey Bunny",
-    "agentID": "5d7931b5bd92e",
-    "id": "5d7a442341c72",
-    "marker": {
-      "geometry": {
-        "coordinates": [12.435513, 55.728585],
-        "type": "Point"
-      },
-      "properties": {
-        "iconSize": [60, 60]
-      },
-      "type": "Feature"
-    }
-  }
 ]

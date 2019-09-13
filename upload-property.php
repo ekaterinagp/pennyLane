@@ -17,11 +17,33 @@
 
   // echo print_r($_FILES);
 
-  $extension = pathinfo($_FILES['imageProperty']['name'])['extension'];
-  $sUniqueImageName = uniqid() . '.' . $extension;
 
 
-  move_uploaded_file($_FILES['imageProperty']['tmp_name'], __DIR__ . "/img/$sUniqueImageName");
+  $iNumberOfImages = count($_FILES['imageProperty']['name']);
+
+
+  $arrayImgs = [];
+  for ($i = 0; $i < $iNumberOfImages; $i++) {
+
+    $sImageName = $_FILES['imageProperty']['name'][$i];
+    // echo $sImageName;
+    $sImageSize = $_FILES['imageProperty']['size'][$i];
+    // echo $sImageSize;
+    $sTmpPath = $_FILES['imageProperty']['tmp_name'][$i];
+
+    // echo $sTmpPath;
+    $extension = pathinfo($_FILES['imageProperty']['name'][$i])['extension'];
+    $sUniqueImageName = uniqid() . '.' . $extension;
+    move_uploaded_file($sTmpPath, __DIR__ . "/img/$sUniqueImageName");
+    // echo $sUniqueImageName;
+    array_push($arrayImgs, $sUniqueImageName);
+    echo json_encode($arrayImgs);
+  }
+
+
+
+
+  // move_uploaded_file($_FILES['imageProperty']['tmp_name'], __DIR__ . "/img/$sUniqueImageName");
 
   $strPrice = $_POST['price'];
   $strAddress = $_POST['address'];
@@ -36,7 +58,8 @@
   // echo $strPrice;
   $jProperty = new stdClass();
   $jProperty->price = intval($strPrice);
-  $jProperty->img = $sUniqueImageName;
+  $jProperty->img = $arrayImgs;
+  // echo $jProperty->img;
   $jProperty->address = $strAddress;
   $jProperty->zip = $strZip;
   $jProperty->agentName = $strAgentName . " " . $strAgentLastName;
@@ -47,9 +70,11 @@
   $jProperty->marker->geometry = new stdClass();
   $jProperty->marker->properties = new stdClass();
   $jProperty->marker->properties->iconSize = [60, 60];
-  $jProperty->marker->geometry->coordinates = [12.435513, 55.728585];
+  $jProperty->marker->geometry->coordinates = [(float) (12.555 . rand(100, 999)), (float) (55.704 . rand(100, 999))];
+  // echo json_encode($jProperty->marker->geometry->coordinates);
   $jProperty->marker->geometry->type = "Point";
   $jProperty->marker->type = "Feature";
+
 
 
   // echo json_encode($jProperty);
@@ -63,7 +88,8 @@
   // echo json_encode($jProperties);
   $sjProperties = json_encode($jProperties, JSON_PRETTY_PRINT);
   file_put_contents(__DIR__ . '/data/properties.json', $sjProperties);
-
+  sleep(3);
+  header('location:profile.php');
   ?>
   <a href="profile.php">Upload an other property</a>
   <!-- <a href="properties.php">View properties</a> -->

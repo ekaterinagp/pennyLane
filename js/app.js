@@ -3,7 +3,7 @@ mapboxgl.accessToken =
 var map = new mapboxgl.Map({
   container: "map",
   center: [12.55505, 55.704001], // starting position
-  zoom: 12, // starting zoom
+  zoom: 10, // starting zoom
   style: "mapbox://styles/ekaterinagp/ck0c6kwbx02us1cqe0vcj6zti"
 });
 map.addControl(new mapboxgl.NavigationControl());
@@ -27,9 +27,10 @@ function fillInMarkers(properties) {
     var el = document.createElement("a");
     el.href = "#V-" + properties[i].id;
     el.className = "marker";
-    el.style.backgroundImage = "url(img/a.png)";
-    el.style.width = "60px";
-    el.style.height = "60px";
+    // el.style.backgroundImage = "url(img/6.jpg)";
+    el.style.backgroundColor = "red";
+    el.style.width = "30px";
+    el.style.height = "30px";
     el.id = properties[i].id;
     console.log({ properties });
     console.log(properties[i].marker.geometry.coordinates);
