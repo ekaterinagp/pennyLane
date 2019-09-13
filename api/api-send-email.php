@@ -60,7 +60,7 @@ try {
   // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
   $mail->send(); // Send the email
-  echo 'Message has been sent';
+  echo '{"status":1, "message": "Message is sent"}';
 } catch (Exception $e) {
-  echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  echo '{"status":0, "message": "Message could not be sent. Mailer Error: ' . $mail->ErrorInfo . '"}';
 }
