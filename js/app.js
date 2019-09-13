@@ -53,3 +53,33 @@ function removeActive() {
     name.classList.remove("active");
   });
 }
+
+let like = document.querySelectorAll("svg");
+
+like.forEach(oneLike => {
+  oneLike.addEventListener("click", () => {
+    console.log(oneLike.id);
+    fetch("api/api-user-liked.php?id=" + oneLike.id)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(response) {
+        console.log({ response });
+      });
+  });
+});
+
+const txtSearch = document.querySelector("#txtSearch");
+const theResults = document.querySelector("#results");
+
+txtSearch.addEventListener("input", function() {
+  if (txtSearch.value.length == 0) {
+    document.querySelector("#txtSearch").classList.remove("error");
+    document.querySelector("#results").style.display = "none";
+    return;
+  }
+  if (txtSearch.value.length < 2) {
+    document.querySelector("#txtSearch").classList.add("error");
+    return;
+  }
+});

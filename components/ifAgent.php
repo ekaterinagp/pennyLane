@@ -22,34 +22,28 @@
 
     if ($jProperty->agentID == $_SESSION['user']->id) {
 
-      // for ($x = 1; $x < count($jProperty->img); $x++) {
-      //   $image = ' <img src="img\"' . $jProperty->img[$x] . '">';
 
-      // }
       foreach ($jProperty->img as $img) {
         $bluePrintForImgs = '<img src="img\{{path}}">';
       }
 
       $strBluePrint = '<div class="property">
         
-        ' . $bluePrintForImgs . '
+      <img src="img\{{path}}">
+      
         <div>ZIP {{zip}}</div>
         <div>ADDRESS {{address}}</div>
         <div>PRICE {{price}} dkk</div>
-        
+        <a href="property.php?id={{id}}" id="detailsBtn">Details</a>
         <button><a href="delete-property.php?id={{id}}">Delete</a></button>
         <button><a href="update-property.php?id={{id}}">Update</a></button>
       </div>';
 
       $sCopyBluePrint = $strBluePrint;
       $sCopyBluePrint = str_replace('{{price}}', $jProperty->price, $sCopyBluePrint);
-      foreach ($jProperty->img as $img) {
-        $sCopyBluePrint = str_replace('{{path}}', $img, $sCopyBluePrint);
-      }
-
+      $sCopyBluePrint = str_replace('{{path}}', $jProperty->img[0], $sCopyBluePrint);
       $sCopyBluePrint = str_replace('{{address}}', $jProperty->address, $sCopyBluePrint);
       $sCopyBluePrint = str_replace('{{zip}}', $jProperty->zip, $sCopyBluePrint);
-
       $sCopyBluePrint = str_replace('{{id}}', $jProperty->id, $sCopyBluePrint);
 
       echo $sCopyBluePrint;
@@ -57,4 +51,6 @@
   }
 
   ?>
+
+
 </div>

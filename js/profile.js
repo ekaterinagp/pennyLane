@@ -23,3 +23,19 @@ function changeImage(userObject) {
   let img = document.querySelector("#imgProfile");
   img.setAttribute("src", "img/" + userObject.img);
 }
+
+const sendEmailbtn = document.querySelector("#sendEmail");
+
+sendEmailbtn.addEventListener("click", () => {
+  fetch("api/api-send-email.php", {
+    method: "POST",
+    headers: {
+      "content-type": "application/x-www-form-urlencoded"
+    }
+  })
+    .then(res => res.json())
+    .then(response => {
+      console.log(response);
+      // changeImage(response);
+    });
+});

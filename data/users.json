@@ -6,7 +6,8 @@
         "password": "12345aaa",
         "userType": "agent",
         "id": "5d7931b5bd92e",
-        "img": "5d7b337cef288.jpg"
+        "img": "5d7b337cef288.jpg",
+        "liked": []
     },
     {
         "email": "dsdsd@sdsd.gk",
@@ -15,7 +16,8 @@
         "password": "qwerrtty",
         "userType": "user",
         "id": "5d78cbcfd30f5",
-        "img": "5d7b2a2c96356.png"
+        "img": "5d7b2a2c96356.png",
+        "liked": []
     },
     {
         "name": "Anna",
@@ -24,7 +26,12 @@
         "password": "annaanna",
         "userType": "user",
         "img": "5d7b2b5b166e1.jpg",
-        "id": "5d7b2a48740c3"
+        "id": "5d7b2a48740c3",
+        "liked": [
+            "5d7b2cbc9f422",
+            "5d7a442341c72",
+            "5d7a35b735d35"
+        ]
     },
     {
         "name": "Dan",
@@ -33,7 +40,8 @@
         "password": "dan12345",
         "userType": "agent",
         "img": "5d7b2bafd5ce7.jpg",
-        "id": "5d7b2b74886ce"
+        "id": "5d7b2b74886ce",
+        "liked": []
     },
     {
         "name": "John",
@@ -42,7 +50,8 @@
         "password": "11111111",
         "userType": "agent",
         "img": "5d7b2d3d8fb74.png",
-        "id": "5d7b2d03c710b"
+        "id": "5d7b2d03c710b",
+        "liked": []
     },
     {
         "name": "Ella",
@@ -51,7 +60,8 @@
         "password": "22222222",
         "userType": "user",
         "img": "5d7b2e1b9da22.jpg",
-        "id": "5d7b2dfec6ef1"
+        "id": "5d7b2dfec6ef1",
+        "liked": []
     },
     {
         "name": "Peter",
@@ -60,7 +70,8 @@
         "password": "11111111",
         "userType": "agent",
         "img": "5d7b303ee211b.png",
-        "id": "5d7b302ac80a6"
+        "id": "5d7b302ac80a6",
+        "liked": []
     },
     {
         "name": "Lala",
@@ -69,7 +80,8 @@
         "password": "lalalala",
         "userType": "user",
         "img": "5d7b313ee57a8.jpg",
-        "id": "5d7b30eb96317"
+        "id": "5d7b30eb96317",
+        "liked": []
     },
     {
         "name": "wan",
@@ -77,7 +89,8 @@
         "email": "a@wan.com",
         "password": "12345678",
         "userType": "agent",
-        "img": "default.png",
-        "id": "5d7b3ee326e85"
+        "img": "5d7b6ecccc465.png",
+        "id": "5d7b3ee326e85",
+        "liked": []
     }
 ]
