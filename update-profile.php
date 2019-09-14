@@ -47,9 +47,10 @@ if (!$_SESSION) {
         $jUser->email = $newEmail;
         $jUser->name = $newName;
         $jUser->lastName = $newLastName;
+        $_SESSION['user'] = $jUser;
       }
     }
-    $_SESSION['user'] = $jUser;
+
     $sjUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
 
     file_put_contents(__DIR__ . '/data/users.json',  $sjUsers);

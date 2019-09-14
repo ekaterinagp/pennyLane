@@ -40,7 +40,7 @@ if (!$_SESSION) {
   ';
 
       ?>
-      <a href="update-profile.php"><button id="<?php echo $_SESSION['user']->id ?>">Update profile</button></a>
+      <a href="update-profile.php"><button>Update profile</button></a>
       <button id="deleteProfile">Delete profile</button>
       <a href="logout.php"><button>LOGOUT</button></a>
     </div>

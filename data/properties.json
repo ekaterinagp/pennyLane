@@ -245,11 +245,11 @@
         }
     },
     {
-        "price": 243345,
+        "price": "243345",
         "img": [
-            "5d7b75489a567.jpg",
-            "5d7b4150ce0a0.jpg",
-            "5d7b4150ceb39.jpg"
+            "5d7cc269750f8.jpg",
+            "5d7cc269756b2.jpg",
+            "5d7cc26975b5b.jpg"
         ],
         "address": "Guldbergsgade, 44",
         "zip": "2200",
@@ -274,11 +274,12 @@
         }
     },
     {
-        "price": 1111111,
+        "price": "1111111",
         "img": [
-            "5d7b4645a69db.jpg",
-            "5d7b4645a70f4.jpg",
-            "5d7b4645a79d9.jpg"
+            "5d7cc29396c0f.jpg",
+            "5d7cc29397972.jpg",
+            "5d7cc29398236.jpg",
+            "5d7cc293988a6.jpg"
         ],
         "address": "Norrebrogade,12",
         "zip": "1234",
@@ -303,11 +304,13 @@
         }
     },
     {
-        "price": 1000000,
+        "price": "1000000",
         "img": [
-            "5d7b4667dded9.jpg",
-            "5d7b4667de338.jpg",
-            "5d7b4667de878.jpg"
+            "5d7cc27ad3216.jpg",
+            "5d7cc27ad380f.jpg",
+            "5d7cc27ad3c87.jpg",
+            "5d7cc27ad40e9.jpg",
+            "5d7cc27ad4558.jpg"
         ],
         "address": "dortevej,13",
         "zip": "2200",
@@ -332,9 +335,14 @@
         }
     },
     {
-        "price": 12222,
+        "price": "12222",
         "img": [
-            "5d7b75489a567.jpg"
+            "5d7cc2a2b4c27.jpg",
+            "5d7cc2a2b518a.jpg",
+            "5d7cc2a2b568a.jpg",
+            "5d7cc2a2b5b0c.jpg",
+            "5d7cc2a2b5f6b.jpg",
+            "5d7cc2a2b6505.jpg"
         ],
         "address": "fasanvej,12",
         "zip": "2000",
