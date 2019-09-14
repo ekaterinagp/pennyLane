@@ -25,6 +25,7 @@ if (!$_SESSION) {
 
   <div class="gridContainer">
     <div id="profileContainer">
+
       <?php
       echo '
   <h1>Welcome ' . $_SESSION['user']->name . ' </h1>
@@ -39,6 +40,7 @@ if (!$_SESSION) {
   ';
 
       ?>
+      <a href="update-profile.php"><button id="<?php echo $_SESSION['user']->id ?>">Update profile</button></a>
       <button id="deleteProfile">Delete profile</button>
       <a href="logout.php"><button>LOGOUT</button></a>
     </div>

@@ -2,7 +2,7 @@
     {
         "name": "Honey",
         "lastName": "Bunny",
-        "email": "h@b.dk",
+        "email": "ho@b.dk",
         "password": "12345aaa",
         "userType": "agent",
         "id": "5d7931b5bd92e",
@@ -10,9 +10,9 @@
         "liked": []
     },
     {
-        "email": "dsdsd@sdsd.gk",
-        "name": "sdsd",
-        "lastName": "sdsd",
+        "email": "hon@b.dk",
+        "name": "Honey",
+        "lastName": "Bunny",
         "password": "qwerrtty",
         "userType": "user",
         "id": "5d78cbcfd30f5",
@@ -20,9 +20,9 @@
         "liked": []
     },
     {
-        "name": "Anna",
-        "lastName": "Andersen",
-        "email": "ann@a.com",
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "hon@b.dk",
         "password": "annaanna",
         "userType": "user",
         "img": "5d7b2b5b166e1.jpg",
@@ -33,9 +33,9 @@
         ]
     },
     {
-        "name": "Dan",
-        "lastName": "Dan",
-        "email": "dan@dan.com",
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "hon@b.dk",
         "password": "dan12345",
         "userType": "agent",
         "img": "5d7b2bafd5ce7.jpg",
@@ -43,9 +43,9 @@
         "liked": []
     },
     {
-        "name": "John",
-        "lastName": "Awsome",
-        "email": "awsome@a.com",
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "hon@b.dk",
         "password": "11111111",
         "userType": "agent",
         "img": "5d7b2d3d8fb74.png",
@@ -53,9 +53,9 @@
         "liked": []
     },
     {
-        "name": "Ella",
-        "lastName": "Elliason",
-        "email": "ella@e.dk",
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "hon@b.dk",
         "password": "22222222",
         "userType": "user",
         "img": "5d7b2e1b9da22.jpg",
@@ -63,9 +63,9 @@
         "liked": []
     },
     {
-        "name": "Peter",
-        "lastName": "Peterson",
-        "email": "p@p.com",
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "hon@b.dk",
         "password": "11111111",
         "userType": "agent",
         "img": "5d7b303ee211b.png",
@@ -73,9 +73,9 @@
         "liked": []
     },
     {
-        "name": "Lala",
-        "lastName": "Lalala",
-        "email": "lala@lala.com",
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "hon@b.dk",
         "password": "lalalala",
         "userType": "user",
         "img": "5d7b313ee57a8.jpg",
@@ -83,12 +83,12 @@
         "liked": []
     },
     {
-        "name": "wan",
-        "lastName": "wan",
-        "email": "a@wan.com",
+        "name": "Honnney",
+        "lastName": "Bunny",
+        "email": "h@b.dk",
         "password": "12345678",
         "userType": "agent",
-        "img": "5d7b6ecccc465.png",
+        "img": "5d7cbf5f178f5.jpg",
         "id": "5d7b3ee326e85",
         "liked": []
     }

@@ -59,14 +59,14 @@ if (!$_SESSION) {
 
 
 
-    if ($_POST) {
-      $newPrice = $_POST['newPrice'];
-      foreach ($jProperties as $jProperty) {
-        if ($sPropertyID == $jProperty->id) {
-          $jProperty->price = $newPrice;
-          $jProperty->img = $arrayImgs;
-        }
+
+    $newPrice = $_POST['newPrice'];
+    foreach ($jProperties as $jProperty) {
+      if ($sPropertyID == $jProperty->id) {
+        $jProperty->price = $newPrice;
+        $jProperty->img = $arrayImgs;
       }
+
 
       $sjProperties = json_encode($jProperties, JSON_PRETTY_PRINT);
 
@@ -75,14 +75,6 @@ if (!$_SESSION) {
       header('location:profile.php');
     }
   }
-
-  // echo $sPropertyID;
-
-
-
-  // echo json_encode($jProperties);
-  // echo print_r($_FILES);
-
 
 
 
