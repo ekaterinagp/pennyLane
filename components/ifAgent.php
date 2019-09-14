@@ -23,9 +23,9 @@
     if ($jProperty->agentID == $_SESSION['user']->id) {
 
 
-      foreach ($jProperty->img as $img) {
-        $bluePrintForImgs = '<img src="img\{{path}}">';
-      }
+      // foreach ($jProperty->img as $img) {
+      //   $bluePrintForImgs = '<img src="img\{{path}}">';
+      // }
 
       $strBluePrint = '<div class="property">
         

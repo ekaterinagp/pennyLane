@@ -103,7 +103,7 @@ input[type="password"] {
 input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="password"]:valid {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg); */
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: 5px 6px;
@@ -205,6 +205,7 @@ input.error {
   /* background-color: rgb(204, 197, 197); */
   border: 1px solid black;
   display: none;
+  position: absolute;
 }
 
 .error {

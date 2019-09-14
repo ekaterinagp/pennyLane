@@ -47,24 +47,7 @@ if (!$_SESSION) {
     if ($_SESSION['user']->userType == "agent") {
       include_once(__DIR__ . '/components/ifAgent.php');
       ?>
-      <!-- <div id="uploadProperty">
-        <h2>Upload new property</h2>
-        <form action="upload-property.php" method="POST" enctype="multipart/form-data">
 
-          <input type="file" name="imageProperty">
-          <input type="text" placeholder="price" name="price">
-          <input type="text" placeholder="address" name="address">
-          <input type="text" placeholder="zip" name="zip">
-
-          <button>Upload property</button>
-        </form>
-      </div>
-  </div>
-  <h2>Your properties</h2>
-  <div id="agentProperties">
-
-  
-  </div> -->
 
     <?php
     } else {
@@ -88,6 +71,7 @@ if (!$_SESSION) {
 
 
     <script src="js/profile.js"></script>
+
 </body>
 
 </html>

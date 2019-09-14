@@ -68,18 +68,3 @@ like.forEach(oneLike => {
       });
   });
 });
-
-const txtSearch = document.querySelector("#txtSearch");
-const theResults = document.querySelector("#results");
-
-txtSearch.addEventListener("input", function() {
-  if (txtSearch.value.length == 0) {
-    document.querySelector("#txtSearch").classList.remove("error");
-    document.querySelector("#results").style.display = "none";
-    return;
-  }
-  if (txtSearch.value.length < 2) {
-    document.querySelector("#txtSearch").classList.add("error");
-    return;
-  }
-});

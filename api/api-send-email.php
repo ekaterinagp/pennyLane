@@ -1,5 +1,6 @@
 <?php
 
+$propertyToSend = $_GET['id'];
 // $sactivationKey = "RTsdjdkskdhhasl";
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
@@ -34,7 +35,7 @@ try {
   $mail->Port       = 587;                                    // TCP port to connect to
 
   //Recipients
-  $mail->setFrom('wkea108@gmail.com', 'Our new properties');
+  $mail->setFrom('wkea108@gmail.com', 'You liked the property');
   $mail->addAddress('wkea108@gmail.com', 'Penny Lane');     // Add a recipient
   // $mail->addAddress('ellen@example.com');               // Name is optional
   // $mail->addReplyTo('dummy@gmail.com', 'Information');
@@ -54,9 +55,9 @@ try {
   //   exit;
   // }
   // $sPath = "http://localhost/activate-email/api-activate-account.php?id=U1&key=$sactivationKey";
-  $sPath = "http://zillow.com";
-  $mail->Subject = 'Our new properties';
-  $mail->Body    = 'Welcome, look at  <a href="' . $sPath . '"> our new properties</a>';
+  $sPath = 'http://localhost/PennyLane/property.php?id=' . $propertyToSend . '';
+  $mail->Subject = 'Your saved properties';
+  $mail->Body    = 'You have added this property to your list <a href="' . $sPath . '"> Property # ' . $propertyToSend . ' </a>';
   // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
   $mail->send(); // Send the email

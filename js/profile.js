@@ -24,18 +24,22 @@ function changeImage(userObject) {
   img.setAttribute("src", "img/" + userObject.img);
 }
 
-const sendEmailbtn = document.querySelector("#sendEmail");
+const sendEmailbtns = document.querySelectorAll(".sendPropertyByEmail");
 
-sendEmailbtn.addEventListener("click", () => {
-  fetch("api/api-send-email.php", {
-    method: "POST",
-    headers: {
-      "content-type": "application/x-www-form-urlencoded"
-    }
-  })
-    .then(res => res.json())
-    .then(response => {
-      console.log(response);
-      // changeImage(response);
+if (sendEmailbtns) {
+  sendEmailbtns.forEach(button => {
+    button.addEventListener("click", () => {
+      fetch("api/api-send-email.php?id=" + button.id, {
+        method: "GET",
+        headers: {
+          "content-type": "application/x-www-form-urlencoded"
+        }
+      })
+        .then(res => res.json())
+        .then(response => {
+          console.log(response);
+          // changeImage(response);
+        });
     });
-});
+  });
+}

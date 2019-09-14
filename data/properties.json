@@ -1,8 +1,10 @@
 [
     {
-        "price": 34000,
+        "price": "2000",
         "img": [
-            "5d7a35b735765.jpg"
+            "5d7cb77657391.jpg",
+            "5d7cb77657a33.jpg",
+            "5d7cb77657f9f.jpg"
         ],
         "address": "Ryparken 21B",
         "zip": "2100",
@@ -243,7 +245,7 @@
         }
     },
     {
-        "price": "243345",
+        "price": 243345,
         "img": [
             "5d7b75489a567.jpg",
             "5d7b4150ce0a0.jpg",
@@ -357,11 +359,10 @@
         }
     },
     {
-        "price": 32000,
+        "price": "30000",
         "img": [
-            "5d7b904fe91d7.jpg",
-            "5d7b904fe96a9.jpg",
-            "5d7b904fe9ba0.jpg"
+            "5d7cb87125940.jpg",
+            "5d7cb87125e54.jpg"
         ],
         "address": "Fasanvej,55",
         "zip": "2000",
