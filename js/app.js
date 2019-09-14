@@ -1,3 +1,5 @@
+init();
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoiZWthdGVyaW5hZ3AiLCJhIjoiY2swYzVlZzN5MDRwejNlbXUwaWJjYnhzMSJ9.ad2I9a9Kg_1J78hh4WA9rA";
 var map = new mapboxgl.Map({
@@ -18,8 +20,6 @@ function fetchData() {
       fillInMarkers(response);
     });
 }
-
-fetchData();
 
 function fillInMarkers(properties) {
   for (let i = 0; i < properties.length; i++) {
@@ -59,12 +59,53 @@ let like = document.querySelectorAll("svg");
 like.forEach(oneLike => {
   oneLike.addEventListener("click", () => {
     console.log(oneLike.id);
+
     fetch("api/api-user-liked.php?id=" + oneLike.id)
       .then(function(response) {
         return response.json();
       })
       .then(function(response) {
         console.log({ response });
+        if (response.message == "Added") {
+          oneLike.classList.add("forPath");
+        } else {
+          oneLike.classList.remove("forPath");
+        }
       });
   });
 });
+
+function fetchSessionUser() {
+  return new Promise((resolve, reject) => {
+    let url = "api/api-get-session.php";
+    fetch(url)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(response) {
+        console.log({ response });
+        resolve(response);
+      });
+  });
+}
+
+function checkIfLiked(user) {
+  let svgsForLikes = document.querySelectorAll("svg");
+  let usersLikes = user.liked;
+  console.log({ usersLikes });
+  console.log({ svgsForLikes });
+  usersLikes.forEach(like => {
+    svgsForLikes.forEach(svgLike => {
+      if (like == svgLike.id) {
+        console.log("there is a match", like);
+        svgLike.classList.add("forPath");
+      }
+    });
+  });
+}
+
+async function init() {
+  fetchData();
+  userInSession = await fetchSessionUser();
+  checkIfLiked(userInSession);
+}

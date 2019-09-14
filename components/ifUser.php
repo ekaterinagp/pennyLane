@@ -25,6 +25,7 @@
                <div>ADDRESS {{address}}</div>
                 <div>PRICE {{price}} dkk</div>
               <a href="property.php?id={{id}}" id="detailsBtn">Details</a>
+              <a href ="delete-property-from-likes.php?id={{id}}"><button>Delete from your list</button></a>
               <button class="sendPropertyByEmail" id="{{id}}">Send this by email</button>
                
               </div>';

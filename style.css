@@ -184,7 +184,11 @@ input.error {
 
 .heart path {
   stroke: black;
-  fill: none;
+  /* fill: none; */
+}
+
+.forPath {
+  fill: red;
 }
 
 /* @keyframes pulse {

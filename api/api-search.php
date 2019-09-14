@@ -23,7 +23,7 @@ $matches = [];
 foreach ($jProperties as $jProperty) {
 
 
-  if (strpos($jProperty->zip, $sSearchFor) !== false) {
+  if (strpos($jProperty->zip, $sSearchFor) !== false || strpos($jProperty->address, $sSearchFor) !== false) {
     array_push($matches, $jProperty);
   }
 }

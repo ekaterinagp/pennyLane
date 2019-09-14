@@ -29,10 +29,14 @@ foreach ($jUsers as $jUser) {
 
 
       array_splice($jUser->liked, $index, 1);
-      echo json_encode($jUser);
+      $_SESSION['user']->liked = $jUser->liked;
+      // echo json_encode($jUser);
+      echo '{"status":0, "message": "Erazed"}';
     } else {
       array_push($jUser->liked, $propertyId);
-      echo json_encode($jUser);
+      $_SESSION['user']->liked = $jUser->liked;
+      // echo json_encode($jUser);
+      echo '{"status":1, "message": "Added"}';
     }
     //   // $index = array_search($propertyId, $jUser->liked);
     //   // array_splice($jUser->liked, $index, 1);
