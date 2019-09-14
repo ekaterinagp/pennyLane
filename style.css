@@ -215,3 +215,10 @@ input.error {
 .error {
   border: 2px solid red;
 }
+
+.notification {
+  display: none;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+}

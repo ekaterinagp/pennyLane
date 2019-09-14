@@ -72,7 +72,7 @@
         matches.forEach(match => {
           let a = document.createElement("a");
           a.href = "property.php?id=" + match.id;
-          a.textContent = match.zip + " " + match.address;
+          a.textContent = match.zip + " " + match.street + " " + match.number;
           let span = document.createElement("br");
           theResults.append(a, span);
         });

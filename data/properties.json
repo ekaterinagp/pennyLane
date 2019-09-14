@@ -1,6 +1,9 @@
 [
   {
-    "price": "2000",
+    "price": "20000",
+    "size": "123",
+    "bed": "3",
+    "bath": "1",
     "img": [
       "5d7cf5f9ad81f.jpg",
       "5d7cf5f9adefc.jpg",
@@ -10,7 +13,8 @@
       "5d7cf5f9aef26.jpg",
       "5d7cf5f9af328.jpg"
     ],
-    "address": "Ryparken 21B",
+    "street": "Ryparken",
+    "number": " 21B",
     "zip": "2100",
     "agentName": "Honey Bunny",
     "agentID": "5d7931b5bd92e",
@@ -28,13 +32,17 @@
   },
   {
     "price": "23000",
+    "size": "150",
+    "bed": "2",
+    "bath": "3",
     "img": [
       "5d7cf496a09b0.jpg",
       "5d7cf496a0e8d.jpg",
       "5d7cf496a1307.jpg",
       "5d7cf496a1839.jpg"
     ],
-    "address": "Faelledvej 17B 2tv",
+    "street": "Faelledvej",
+    "number": "17B 2tv",
     "zip": "2200",
     "agentName": "Honey Bunny",
     "agentID": "5d7931b5bd92e",
@@ -52,13 +60,17 @@
   },
   {
     "price": "32000",
+    "size": "205",
+    "bed": "5",
+    "bath": "3",
     "img": [
       "5d7cf4662249c.jpg",
       "5d7cf466229ba.jpg",
       "5d7cf46623056.jpg",
       "5d7cf46623978.jpg"
     ],
-    "address": "Tagensvej 109B 1th",
+    "street": "Tagensvej",
+    "number": "109B 1th",
     "zip": "2200",
     "agentName": "Honey Bunny",
     "agentID": "5d7931b5bd92e",
@@ -76,6 +88,9 @@
   },
   {
     "price": "23000",
+    "size": "88",
+    "bed": "1",
+    "bath": "1",
     "img": [
       "5d7cf62c09fb8.jpg",
       "5d7cf62c0a511.jpg",
@@ -83,7 +98,8 @@
       "5d7cf62c0af83.jpg",
       "5d7cf62c0b449.jpg"
     ],
-    "address": "Norre Alle, 66",
+    "street": "Norre Alle",
+    "number": "66",
     "zip": "2400",
     "agentName": "Dan Dan",
     "agentID": "5d7b2b74886ce",
@@ -101,6 +117,9 @@
   },
   {
     "price": "450000",
+    "size": "278",
+    "bed": "4",
+    "bath": "3",
     "img": [
       "5d7cf666d71c9.jpg",
       "5d7cf666d7710.jpg",
@@ -108,7 +127,8 @@
       "5d7cf666d80bb.jpg",
       "5d7cf666d8791.jpg"
     ],
-    "address": "Christoffers Alle, 73",
+    "street": "Christoffers Alle",
+    "number": "73",
     "zip": "3400",
     "agentName": "Dan Dan",
     "agentID": "5d7b2b74886ce",
@@ -127,8 +147,12 @@
 
   {
     "price": "243345",
+    "size": "199",
+    "bed": "2",
+    "bath": "2",
     "img": ["5d7cc269750f8.jpg", "5d7cc269756b2.jpg", "5d7cc26975b5b.jpg"],
-    "address": "Guldbergsgade, 44",
+    "street": "Guldbergsgade",
+    "number": "44",
     "zip": "2200",
     "agentName": "wan wan",
     "agentID": "5d7b3ee326e85",
@@ -145,14 +169,18 @@
     }
   },
   {
-    "price": "1111111",
+    "price": "1111100",
+    "size": "88",
+    "bed": "1",
+    "bath": "1",
     "img": [
       "5d7cc29396c0f.jpg",
       "5d7cc29397972.jpg",
       "5d7cc29398236.jpg",
       "5d7cc293988a6.jpg"
     ],
-    "address": "Norrebrogade,12",
+    "street": "Norrebrogade",
+    "number": "13",
     "zip": "1234",
     "agentName": "wan wan",
     "agentID": "5d7b3ee326e85",
@@ -170,6 +198,9 @@
   },
   {
     "price": "1000000",
+    "size": "350",
+    "bed": "4",
+    "bath": "3",
     "img": [
       "5d7cc27ad3216.jpg",
       "5d7cc27ad380f.jpg",
@@ -177,7 +208,8 @@
       "5d7cc27ad40e9.jpg",
       "5d7cc27ad4558.jpg"
     ],
-    "address": "Dortevej,13",
+    "street": "Dortevej",
+    "number": "13",
     "zip": "2200",
     "agentName": "wan wan",
     "agentID": "5d7b4150cf0ab",
@@ -195,6 +227,9 @@
   },
   {
     "price": "12222",
+    "size": "113",
+    "bed": "3",
+    "bath": "1",
     "img": [
       "5d7cc2a2b4c27.jpg",
       "5d7cc2a2b518a.jpg",
@@ -203,7 +238,8 @@
       "5d7cc2a2b5f6b.jpg",
       "5d7cc2a2b6505.jpg"
     ],
-    "address": "fasanvej,12",
+    "street": "Fasanvej",
+    "number": "12",
     "zip": "2000",
     "agentName": "wan wan",
     "agentID": "5d7b4150cf0ab",
@@ -221,13 +257,17 @@
   },
   {
     "price": "30000",
+    "size": "109",
+    "bed": "3",
+    "bath": "1",
     "img": [
       "5d7cf451c2035.jpg",
       "5d7cf451c25bf.jpg",
       "5d7cf451c2d4b.jpg",
       "5d7cf451c321d.jpg"
     ],
-    "address": "Fasanvej,55",
+    "street": "Fasanvej",
+    "number": "55",
     "zip": "2000",
     "agentName": "Honey Bunny",
     "agentID": "5d7931b5bd92e",
@@ -245,6 +285,9 @@
   },
   {
     "price": 25000,
+    "size": "98",
+    "bed": "2",
+    "bath": "2",
     "img": [
       "5d7cf920606fc.jpg",
       "5d7cf92060ce0.jpg",
@@ -253,7 +296,8 @@
       "5d7cf920619bb.jpg",
       "5d7cf92061d6b.jpg"
     ],
-    "address": "Legravsparken,33",
+    "street": "Legravsparken",
+    "number": "25",
     "zip": "2100",
     "agentName": "John Awsome",
     "agentID": "5d7b2d72a1800",
@@ -271,6 +315,9 @@
   },
   {
     "price": 450000,
+    "size": "201",
+    "bed": "4",
+    "bath": "3",
     "img": [
       "5d7cf942866b5.jpg",
       "5d7cf94286ea3.jpg",
@@ -280,7 +327,8 @@
       "5d7cf94288604.jpg",
       "5d7cf942889b2.jpg"
     ],
-    "address": "Ermitagegade,44",
+    "street": "Ermitagegade",
+    "number": "44",
     "zip": "1234",
     "agentName": "John Awsome",
     "agentID": "5d7b2d72a1800",
@@ -298,6 +346,9 @@
   },
   {
     "price": 55000,
+    "size": "65",
+    "bed": "1",
+    "bath": "1",
     "img": [
       "5d7cf9713a656.jpg",
       "5d7cf9713ac3d.jpg",
@@ -308,14 +359,15 @@
       "5d7cf9713c899.jpg",
       "5d7cf9713ce52.jpg"
     ],
-    "address": "Filostr\u00e6de 14",
+    "street": "Filostrade",
+    "number": "14",
     "zip": "20000",
     "agentName": "John Awsome",
     "agentID": "5d7b2d72a1800",
     "id": "5d7cf9713d225",
     "marker": {
       "geometry": {
-        "coordinates": [12.555164, 55.704526],
+        "coordinates": [12.511234, 55.718826],
         "type": "Point"
       },
       "properties": {
@@ -326,6 +378,9 @@
   },
   {
     "price": 700000,
+    "size": "210",
+    "bed": "5",
+    "bath": "3",
     "img": [
       "5d7cf9bf52b3f.jpg",
       "5d7cf9bf53261.jpg",
@@ -335,14 +390,15 @@
       "5d7cf9bf54842.jpg",
       "5d7cf9bf54c8b.jpg"
     ],
-    "address": "Kastrupvej,33",
+    "street": "Kastrupvej",
+    "number": "33",
     "zip": "1312",
     "agentName": "Peter Peterson",
     "agentID": "5d7b30718132d",
     "id": "5d7cf9bf55105",
     "marker": {
       "geometry": {
-        "coordinates": [12.555746, 55.704988],
+        "coordinates": [12.516906, 55.732788],
         "type": "Point"
       },
       "properties": {
@@ -353,6 +409,9 @@
   },
   {
     "price": 690000,
+    "size": "157",
+    "bed": "3",
+    "bath": "1",
     "img": [
       "5d7cf9e726565.jpg",
       "5d7cf9e726a36.jpg",
@@ -362,14 +421,15 @@
       "5d7cf9e727991.jpg",
       "5d7cf9e727d8f.jpg"
     ],
-    "address": "Nordhavn,12",
+    "street": "Nordhavn",
+    "number": "12",
     "zip": "21000",
     "agentName": "Peter Peterson",
     "agentID": "5d7b30718132d",
     "id": "5d7cf9e7281a8",
     "marker": {
       "geometry": {
-        "coordinates": [12.555226, 55.704445],
+        "coordinates": [12.521226, 55.711445],
         "type": "Point"
       },
       "properties": {
@@ -380,6 +440,9 @@
   },
   {
     "price": 37000,
+    "size": "94",
+    "bed": "2",
+    "bath": "1",
     "img": [
       "5d7cfa3f43129.jpg",
       "5d7cfa3f43659.jpg",
@@ -388,14 +451,15 @@
       "5d7cfa3f442c4.jpg",
       "5d7cfa3f44650.jpg"
     ],
-    "address": "Charlottegade,77",
+    "street": "Charlottegade",
+    "number": "71",
     "zip": "2000",
     "agentName": "wan wan",
     "agentID": "5d7b4150cf0ab",
     "id": "5d7cfa3f44a2f",
     "marker": {
       "geometry": {
-        "coordinates": [12.555362, 55.704967],
+        "coordinates": [12.530362, 55.711967],
         "type": "Point"
       },
       "properties": {
@@ -406,6 +470,9 @@
   },
   {
     "price": 795000,
+    "size": "188",
+    "bed": "3",
+    "bath": "1",
     "img": [
       "5d7cfa67a87d3.jpg",
       "5d7cfa67a8ca1.jpg",
@@ -417,14 +484,15 @@
       "5d7cfa67aa71a.jpg",
       "5d7cfa67aaf76.jpg"
     ],
-    "address": "Hamletsgade,54",
+    "street": "Hamletsgade",
+    "number": "54",
     "zip": "2200",
     "agentName": "wan wan",
     "agentID": "5d7b4150cf0ab",
     "id": "5d7cfa67ab3ae",
     "marker": {
       "geometry": {
-        "coordinates": [12.55545, 55.704707],
+        "coordinates": [12.53545, 55.724707],
         "type": "Point"
       },
       "properties": {

@@ -68,7 +68,44 @@ function fetchSessionUser() {
   });
 }
 
+let like = document.querySelectorAll("svg");
+
+function addLike(user) {
+  like.forEach(oneLike => {
+    oneLike.addEventListener("click", () => {
+      console.log(oneLike.id);
+      if (user.userType == "agent") {
+        let divNotification = document.createElement("div");
+        divNotification.classList.add("notification");
+        let p = document.createElement("p");
+        p.textContent = "Only non-professionals can save items";
+        divNotification.append(p);
+        divNotification.style.display = "block";
+        document.querySelector("#properties").append(divNotification);
+        setTimeout(() => {
+          divNotification.style.display = "none";
+        }, 3000);
+      }
+      fetch("api/api-user-liked.php?id=" + oneLike.id)
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(response) {
+          // console.log({ response });
+          if (response.message == "Added") {
+            oneLike.classList.add("forPath");
+          } else {
+            oneLike.classList.remove("forPath");
+          }
+        });
+    });
+  });
+}
+
 function checkIfLiked(user) {
+  if (user.userType == "agent") {
+    return;
+  }
   let svgsForLikes = document.querySelectorAll("svg");
   let usersLikes = user.liked;
   console.log({ usersLikes });
@@ -83,29 +120,10 @@ function checkIfLiked(user) {
   });
 }
 
-let like = document.querySelectorAll("svg");
-
-like.forEach(oneLike => {
-  oneLike.addEventListener("click", () => {
-    console.log(oneLike.id);
-
-    fetch("api/api-user-liked.php?id=" + oneLike.id)
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(response) {
-        // console.log({ response });
-        if (response.message == "Added") {
-          oneLike.classList.add("forPath");
-        } else {
-          oneLike.classList.remove("forPath");
-        }
-      });
-  });
-});
-
 async function init() {
   fetchData();
   userInSession = await fetchSessionUser();
+
   checkIfLiked(userInSession);
+  addLike(userInSession);
 }

@@ -42,11 +42,19 @@ function fillInData(data) {
     if (id == property.id) {
       console.log({ property });
       let address = document.querySelector("#addressProperty");
-      address.textContent = "Address" + " " + property.address;
+      address.textContent =
+        "Address" + " " + property.street + " " + property.number;
       let zip = document.querySelector("#zipProperty");
       zip.textContent = "Zipcode" + " " + property.zip;
       let price = document.querySelector("#priceProperty");
       price.textContent = "Price" + " " + property.price + "" + "dkk";
+      let size = document.querySelectorAll("#sizeProperty");
+      size.textContent = property.size + " " + "m2";
+      let beds = document.querySelector("#bedsProperty");
+      beds.textContent = property.bed + " beds";
+      let baths = document.querySelector("#bathsProperty");
+      baths.textContent = property.bath + " bath(s)";
+
       if (property.img.length > 1) {
         console.log(property.img);
         for (let i = 1; i < property.img.length; i++) {

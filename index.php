@@ -28,9 +28,12 @@
       $strBluePrint = '<div class="property" id="V-{{id}}">
     
     <img src="img\{{path}}">
-    <div>PRICE {{price}} dkk</div>
-    <div>ADDRESS {{address}}</div>
-        <div>ZIP {{zip}}</div>
+    <div>price {{price}}</div>
+    <div>zip {{zip}}</div>
+        <div>Address {{street}}{{number}}</div>
+        <div>Size {{size}} m2</div>
+        <div>Bedrooms {{beds}} </div>
+        <div>Bathrooms {{bath}} </div>
         <div>Agent {{agentName}}</div>
         
         <svg class="heart" viewBox="0 0 32 29.6" id="{{id}}">
@@ -44,8 +47,12 @@
         $sCopyBluePrint = str_replace('{{price}}', $jProperty->price, $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{path}}', $jProperty->img[0], $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{id}}', $jProperty->id, $sCopyBluePrint);
-        $sCopyBluePrint = str_replace('{{address}}', $jProperty->address, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{street}}', $jProperty->street, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{size}}', $jProperty->size, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{number}}', $jProperty->number, $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{zip}}', $jProperty->zip, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{beds}}', $jProperty->bed, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{bath}}', $jProperty->bath, $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{agentName}}', $jProperty->agentName, $sCopyBluePrint);
         echo $sCopyBluePrint;
       }

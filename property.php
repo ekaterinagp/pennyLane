@@ -10,9 +10,15 @@
 <body>
 
 
-  <h1 id="addressProperty"></h1>
+
   <h2 id="zipProperty"></h2>
+  <h1 id="addressProperty"></h1>
   <p id="priceProperty"></p>
+  <p id="sizeProperty"></p>
+  <p id="bedsProperty"></p>
+  <p id="bathsProperty"></p>
+
+
   <img class="mainImage" src="">
   <div id="otherImages"></div>
 

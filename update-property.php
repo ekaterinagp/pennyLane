@@ -82,6 +82,8 @@ if (!$_SESSION) {
 
   <form action="" method="POST" enctype="multipart/form-data">
     <input type="text" name="newPrice" placeholder="enter new price" value="<?php echo  $price ?>">
+
+
     <input type="file" name="imageProperty[]" multiple>
     <button>UPDATE</button>
   </form>
