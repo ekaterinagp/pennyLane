@@ -54,27 +54,6 @@ function removeActive() {
   });
 }
 
-let like = document.querySelectorAll("svg");
-
-like.forEach(oneLike => {
-  oneLike.addEventListener("click", () => {
-    console.log(oneLike.id);
-
-    fetch("api/api-user-liked.php?id=" + oneLike.id)
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(response) {
-        console.log({ response });
-        if (response.message == "Added") {
-          oneLike.classList.add("forPath");
-        } else {
-          oneLike.classList.remove("forPath");
-        }
-      });
-  });
-});
-
 function fetchSessionUser() {
   return new Promise((resolve, reject) => {
     let url = "api/api-get-session.php";
@@ -103,6 +82,27 @@ function checkIfLiked(user) {
     });
   });
 }
+
+let like = document.querySelectorAll("svg");
+
+like.forEach(oneLike => {
+  oneLike.addEventListener("click", () => {
+    console.log(oneLike.id);
+
+    fetch("api/api-user-liked.php?id=" + oneLike.id)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(response) {
+        // console.log({ response });
+        if (response.message == "Added") {
+          oneLike.classList.add("forPath");
+        } else {
+          oneLike.classList.remove("forPath");
+        }
+      });
+  });
+});
 
 async function init() {
   fetchData();

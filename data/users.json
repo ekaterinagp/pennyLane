@@ -32,11 +32,12 @@
         "email": "anna@a.dk",
         "password": "annaanna",
         "userType": "user",
-        "img": "5d7b2bafd5ce7.jpg",
+        "img": "5d7cf4011ced1.jpg",
         "id": "5d7b2dfec6ef1",
         "liked": [
             "5d7a40868bc45",
-            "5d7b30718132d"
+            "5d7b30718132d",
+            "5d7a442341c72"
         ]
     },
     {
@@ -54,7 +55,7 @@
         "email": "wan@wan.dk",
         "password": "22222222",
         "userType": "agent",
-        "img": "5d7b2e1b9da22.jpg",
+        "img": "5d7cfa18ea65b.png",
         "id": "5d7b4150cf0ab"
     },
     {

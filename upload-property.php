@@ -70,7 +70,7 @@
   $jProperty->marker->geometry = new stdClass();
   $jProperty->marker->properties = new stdClass();
   $jProperty->marker->properties->iconSize = [60, 60];
-  $jProperty->marker->geometry->coordinates = [(float) (12.555 . rand(100, 999)), (float) (55.704 . rand(100, 999))];
+  $jProperty->marker->geometry->coordinates = [(float) (12.55 . rand(1000, 9999)), (float) (55.70 . rand(1000, 9990))];
   // echo json_encode($jProperty->marker->geometry->coordinates);
   $jProperty->marker->geometry->type = "Point";
   $jProperty->marker->type = "Feature";
