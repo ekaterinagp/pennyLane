@@ -174,6 +174,7 @@ img {
 }
 
 .imgIndex {
+  background-position: center;
   background-size: cover;
   width: 100%;
   height: 250px;
@@ -437,7 +438,7 @@ input.error {
   text-align: left;
   padding: 10px;
   width: 300px;
-  height: 300px;
+  /* height: 300px; */
   /* background-color: rgb(204, 197, 197); */
   /* border: 1px solid black; */
   display: none;
@@ -574,4 +575,98 @@ input.error {
   max-height: 30%;
   overflow: auto;
   text-align: center;
+}
+
+#propertiesLiked img {
+  width: 400px;
+  height: auto;
+}
+
+.imgUser {
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.linksUserProfile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #uploadImg button {
+    width: 210%;
+    height: auto;
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+  }
+
+  button {
+    width: auto;
+  }
+
+  #formGridUpload input {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #map {
+    display: none;
+  }
+
+  #properties {
+    display: block;
+  }
+
+  #map_properties {
+    display: block;
+  }
+
+  .logoMenu img {
+    display: none;
+  }
+
+  .logoMenu {
+    display: block;
+  }
+
+  .containerOneProperty {
+    background-color: white;
+    margin: 10% auto;
+    width: 100%;
+  }
+
+  .gridContainer,
+  .imgAndData,
+  #uploadImg,
+  #agentProperties {
+    display: block;
+  }
+
+  #uploadImg,
+  #uploadProperty {
+    display: none;
+  }
+
+  .container {
+    height: 100%;
+    background-color: #afafaf;
+  }
+
+  #loginForm {
+    /* text-align: center; */
+    padding-top: 5%;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    /* right: 50%; */
+    padding-left: 5%;
+    padding-right: 5%;
+    /* padding-left: 40%; */
+  }
+
+  #loginForm input {
+    width: 100%;
+  }
 }

@@ -19,16 +19,18 @@
             if ($like == $jProperty->id) {
               // echo "here is a match $like";
               $strBluePrint = '<div class="property">
-               <img src="img\{{path}}">
-               <div>price {{price}}</div>
-               <div>zip {{zip}}</div>
-               <div>Address {{street}}{{number}}</div>
-               <div>Size {{size}} m2</div>
-               <div>Bedrooms {{beds}} </div>
-               <div>Bathrooms {{bath}} </div>
+             <div class="linksUserProfile"> <a href="property.php?id={{id}}" id="detailsBtn">Details</a><a href ="delete-property-from-likes.php?id={{id}}">Delete {{street}}{{number}} from your list</a></div>
+              <div class="imgUser" style="background-image: url(img/{{path}})"></div>
+              <div class="bbs "> <div class="priceIndex borderSeparator "> {{price}} dkk</div>
+    
+              <div class="borderSeparator alignText">Bds {{bed}} </div>
+              <div class="borderSeparator alignText">Ba {{bath}} </div>
+              <div class="sizeIndex alignText" > {{size}} m2</div></div>
+         
+         <div class="addressGridIndex">    <p> {{zip}} {{street}}{{number}} </p>
                
-              <a href="property.php?id={{id}}" id="detailsBtn">Details</a>
-              <a href ="delete-property-from-likes.php?id={{id}}"><button>Delete from your list</button></a>
+             
+            
               <button class="sendPropertyByEmail" id="{{id}}">Send this by email</button>
                
               </div>';
@@ -39,7 +41,7 @@
               $sCopyBluePrint = str_replace('{{size}}', $jProperty->size, $sCopyBluePrint);
               $sCopyBluePrint = str_replace('{{number}}', $jProperty->number, $sCopyBluePrint);
               $sCopyBluePrint = str_replace('{{zip}}', $jProperty->zip, $sCopyBluePrint);
-              $sCopyBluePrint = str_replace('{{beds}}', $jProperty->bed, $sCopyBluePrint);
+              $sCopyBluePrint = str_replace('{{bed}}', $jProperty->bed, $sCopyBluePrint);
               $sCopyBluePrint = str_replace('{{bath}}', $jProperty->bath, $sCopyBluePrint);
               $sCopyBluePrint = str_replace('{{id}}', $jProperty->id, $sCopyBluePrint);
 

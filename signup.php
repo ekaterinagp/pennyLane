@@ -120,7 +120,10 @@ function sendErrorMessage($txtError, $iLineNumber)
 
 
   <div class="container">
-
+    <div class="loginWelcome">
+      <h1>Welcome to Penny Lane!</h1>
+      <h2>Please sign up</h2>
+    </div>
     <form id="signupForm" method="POST">
 
       <div class="labels"> <label for="user"><input type="radio" value="user" name="userType">Sign up as a user</label>
