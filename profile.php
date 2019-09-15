@@ -36,12 +36,13 @@ if (!$_SESSION) {
     <h2>last name: ' . $_SESSION['user']->lastName . '</h2>
   </div>
   <img id="imgProfile" src="img/' . $_SESSION['user']->img . '" alt=""> <form  enctype="multipart/form-data" method="POST" id="uploadImg" ><input type="file" name="img" /><button  >Upload image</button></form>
+  <a href="delete-profile.php?id= ' . $_SESSION['user']->id . '"> <button id="deleteProfile">Delete profile</button></a>
   
   ';
 
       ?>
       <a href="update-profile.php"><button>Update profile</button></a>
-      <button id="deleteProfile">Delete profile</button>
+      <!-- <a href='delete-profile.php?id='> <button id="deleteProfile">Delete profile</button></a> -->
       <a href="logout.php"><button>LOGOUT</button></a>
     </div>
 

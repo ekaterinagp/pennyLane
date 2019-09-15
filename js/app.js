@@ -27,8 +27,8 @@ function fillInMarkers(properties) {
     var el = document.createElement("a");
     el.href = "#V-" + properties[i].id;
     el.className = "marker";
-    // el.style.backgroundImage = "url(img/6.jpg)";
-    el.style.backgroundColor = "red";
+    // el.style.backgroundImage = "url(img/house.png";
+    el.style.backgroundColor = "#D64933";
     el.style.width = "30px";
     el.style.height = "30px";
     el.id = properties[i].id;
@@ -81,7 +81,7 @@ function addLike(user) {
         p.textContent = "Only non-professionals can save items";
         divNotification.append(p);
         divNotification.style.display = "block";
-        document.querySelector("#properties").append(divNotification);
+        document.querySelector("nav").append(divNotification);
         setTimeout(() => {
           divNotification.style.display = "none";
         }, 3000);

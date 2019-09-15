@@ -37,6 +37,10 @@ if ($_POST) {
     // echo $jUser;
     $bl = 0;
     if ($jUser->email == $_POST['inputEmail'] && $jUser->password == $_POST['password']) {
+      if ($jUser->active == "0") {
+        header("location:login.php");
+        exit;
+      }
       $bl = 1;
       echo $jUser->email;
       unset($jUser->password);

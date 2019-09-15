@@ -1,12 +1,18 @@
 <nav>
-  <form action="" id="frmSearch">
-    <input id="txtSearch" type="text" placeholder="search" name="search" maxlength="5" />
-  </form>
-  <div id="results"></div>
-  <a href="index.php">Home</a>
-  <a href="login.php">Login</a>
-  <a href="signup.php">Signup</a>
-  <a href="profile.php">Profile</a>
+
+  <div class="logoMenu"> <img src="img/logo.png">
+    <div class="menuItems"><a href="index.php">Home</a>
+      <a href="profile.php">Profile</a>
+      <a href="login.php">Login</a>
+      <a href="signup.php">Signup</a></div>
+
+  </div>
+  <div>
+    <form action="" id="frmSearch">
+      <input id="txtSearch" type="text" placeholder="search zip or address" name="search" maxlength="5" />
+    </form>
+    <div id="results"></div>
+  </div>
 </nav>
 
 <script>
