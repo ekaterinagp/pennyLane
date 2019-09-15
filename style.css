@@ -166,6 +166,9 @@ img {
   grid-template-columns: 2fr 2fr;
 }
 
+#uploadBtnProperty {
+  color: white;
+}
 .container {
   height: 100vw;
   background-color: #afafaf;
@@ -174,7 +177,7 @@ img {
 .containerForProfileFunctions {
   display: grid;
   grid-gap: 2px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .imgIndex {

@@ -28,7 +28,7 @@ if (!$_SESSION) {
   <div class="gridContainer">
     <div id="profileContainer">
       <div class="containerForProfileFunctions">
-        <a href="logout.php">LOGOUT</a>
+        <!-- <a href="logout.php">LOGOUT</a> -->
         <a href="update-profile.php">Update profile</a>
         <!-- <a href='delete-profile.php?id='> <button id="deleteProfile">Delete profile</button></a> -->
 

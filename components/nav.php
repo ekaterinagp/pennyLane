@@ -4,8 +4,14 @@
     <div class="menuItems">
       <a <?= $sActive == 'Home' ? 'class="activeMenu"' : ''; ?>href="index.php">Home</a>
       <a <?= $sActive == 'Profile' ? 'class="activeMenu"' : ''; ?>href="profile.php">Profile</a>
-      <a <?= $sActive == 'Login' ? 'class="activeMenu"' : ''; ?> href="login.php">Login</a>
-      <a <?= $sActive == 'Signup' ? 'class="activeMenu"' : ''; ?> href="signup.php">Signup</a></div>
+      <?php if (empty($_SESSION['user'])) { ?>
+        <a <?= $sActive == 'Login' ? 'class="activeMenu"' : ''; ?> href="login.php">Login</a>
+        <a <?= $sActive == 'Signup' ? 'class="activeMenu"' : ''; ?> href="signup.php">Signup</a>
+      <?php } else { ?>
+        <a href="logout.php">LOGOUT</a>
+      <?php
+      } ?>
+    </div>
 
   </div>
   <div>
