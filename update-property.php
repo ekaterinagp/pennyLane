@@ -20,7 +20,7 @@ if (!$_SESSION) {
 
 <body>
 
-  <?php require_once(__DIR__ . '/components/nav.php'); ?>
+
 
   <?php
   $sPropertyID = $_GET['id'];

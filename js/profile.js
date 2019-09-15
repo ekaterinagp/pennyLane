@@ -39,7 +39,10 @@ if (sendEmailbtns) {
         .then(res => res.json())
         .then(response => {
           console.log(response);
-          // changeImage(response);
+          showNotification(
+            "Email is sent",
+            "Your saved property is in your mailbox!"
+          );
         });
     });
   });
@@ -68,6 +71,7 @@ function showNotification(title, text) {
   closingTag.classList.add("close");
   closingTag.addEventListener("click", () => {
     document.querySelector(".overlay").style.display = "none";
+    document.location.reload(true);
   });
   closingTag.innerHTML = "&times;";
   let divText = document.createElement("div");

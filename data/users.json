@@ -103,5 +103,18 @@
             "5d7a40868bc45",
             "5d7a442341c72"
         ]
+    },
+    {
+        "name": "a1",
+        "lastName": "a1",
+        "email": "a1@a1.not",
+        "password": "12341234",
+        "userType": "user",
+        "img": "5d7e75dfe0555.jpg",
+        "id": "5d7e7589b7998",
+        "active": "1",
+        "liked": [
+            "5d7b2cbc9f422"
+        ]
     }
 ]

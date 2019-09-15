@@ -16,8 +16,12 @@ a {
   color: #d64933;
 }
 
+.sendPropertyByEmail {
+  color: white;
+}
 #signupForm button {
   margin-left: 35%;
+
   /* color: grey; */
 }
 
@@ -224,7 +228,6 @@ button {
   border-image: initial;
   border-radius: 3px;
   transition: all 0.2s ease 0s;
-  border-color: rgb(0, 106, 255);
 }
 
 #profileContainer {
@@ -302,6 +305,7 @@ button {
 }
 
 #uploadImg button {
+  color: white;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
@@ -567,6 +571,7 @@ input.error {
   font-weight: bold;
   text-decoration: none;
   color: #333;
+  cursor: pointer;
 }
 .popup .close:hover {
   color: #06d85f;

@@ -37,15 +37,14 @@
         }
     },
     {
-        "price": "23000",
+        "price": "2300",
         "size": "150",
         "bed": "2",
         "bath": "3",
         "img": [
-            "5d7cf496a09b0.jpg",
-            "5d7cf496a0e8d.jpg",
-            "5d7cf496a1307.jpg",
-            "5d7cf496a1839.jpg"
+            "5d7e76bd66c4a.jpg",
+            "5d7e76bd670a7.jpg",
+            "5d7e76bd67435.jpg"
         ],
         "street": "Faelledvej",
         "number": "17B 2tv",
@@ -757,6 +756,72 @@
                 "coordinates": [
                     12.552664,
                     55.72238
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 100000,
+        "img": [
+            "5d7e76eb120e9.jpg",
+            "5d7e76eb125da.jpg",
+            "5d7e76eb12b2d.jpg"
+        ],
+        "street": "\u00d8sterbrogade",
+        "number": "1",
+        "bed": "4",
+        "bath": "1",
+        "size": "160",
+        "zip": "2300",
+        "agentName": "Honey Bunny",
+        "agentID": "5d7931b5bd92e",
+        "id": "5d7e76eb13085",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.554061,
+                    55.7906
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "iconSize": [
+                    60,
+                    60
+                ]
+            },
+            "type": "Feature"
+        }
+    },
+    {
+        "price": 12000,
+        "img": [
+            "5d7e77c2bef7a.jpg",
+            "5d7e77c2bf4cf.jpg",
+            "5d7e77c2bfaa7.jpg"
+        ],
+        "street": "Frederiksborgvej",
+        "number": "34",
+        "bed": "3",
+        "bath": "2",
+        "size": "205",
+        "zip": "2000",
+        "agentName": "Honey Bunny",
+        "agentID": "5d7931b5bd92e",
+        "id": "5d7e77c2bfea2",
+        "marker": {
+            "geometry": {
+                "coordinates": [
+                    12.551814,
+                    55.77047
                 ],
                 "type": "Point"
             },
