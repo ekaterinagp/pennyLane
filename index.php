@@ -15,6 +15,7 @@
 <body>
 
   <?php
+  $sActive = "Home";
   require_once(__DIR__ . '/components/nav.php');
   ?>
 
@@ -30,14 +31,15 @@
       <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
       c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
     </svg> 
-    <img src="img\{{path}}">
-    <div class="bbs borderSeparator"> <div class="priceIndex"> {{price}} dkk</div>
+    <div class="imgIndex" style="background-image: url(img/{{path}})"></div>
+ 
+    <div class="bbs "> <div class="priceIndex borderSeparator "> {{price}} dkk</div>
     
-        <div class="borderSeparator">Bds {{beds}} </div>
-        <div class="borderSeparator">Ba {{bath}} </div>
-        <div class="sizeIndex" > {{size}} m2</div></div>
+        <div class="borderSeparator alignText">Bds {{bed}} </div>
+        <div class="borderSeparator alignText">Ba {{bath}} </div>
+        <div class="sizeIndex alignText" > {{size}} m2</div></div>
    
-   <div class="addressGrid">    <p> {{zip}} {{street}}{{number}} </p>
+   <div class="addressGridIndex">    <p> {{zip}} {{street}}{{number}} </p>
         
        
        <div class="forRent"> <div class="roundDot"></div><p>For rent</p></div>
@@ -56,7 +58,7 @@
         $sCopyBluePrint = str_replace('{{size}}', $jProperty->size, $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{number}}', $jProperty->number, $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{zip}}', $jProperty->zip, $sCopyBluePrint);
-        $sCopyBluePrint = str_replace('{{beds}}', $jProperty->bed, $sCopyBluePrint);
+        $sCopyBluePrint = str_replace('{{bed}}', $jProperty->bed, $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{bath}}', $jProperty->bath, $sCopyBluePrint);
         $sCopyBluePrint = str_replace('{{agentName}}', $jProperty->agentName, $sCopyBluePrint);
         echo $sCopyBluePrint;

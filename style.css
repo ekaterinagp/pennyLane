@@ -16,6 +16,41 @@ a {
   color: #d64933;
 }
 
+#signupForm button {
+  margin-left: 35%;
+  /* color: grey; */
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+}
+
+#otherImages {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+}
+
+.addressOneProperty {
+  text-align: center;
+  padding: 15px;
+}
+
+#priceProperty {
+  font-weight: bold;
+}
+.containerOneProperty {
+  background-color: white;
+  margin: 10% auto;
+  width: 50%;
+}
+
+.dataOneProperty {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+}
+
 nav {
   display: grid;
   grid-template-rows: 2fr 1fr;
@@ -27,6 +62,24 @@ nav {
   width: 100%;
   height: 110px;
   background-color: #eee5e9;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+#loginForm {
+  /* text-align: center; */
+  padding-top: 5%;
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr;
+  /* right: 50%; */
+  padding-left: 40%;
+}
+
+#loginForm button {
+  width: 35%;
+}
+
+#loginForm input {
+  width: 35%;
 }
 
 .logoMenu {
@@ -37,11 +90,12 @@ nav {
 
 #frmSearch {
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 #frmSearch input {
   width: 50%;
+  margin-bottom: 15px;
   /* border: 1px solid #92dce5; */
 }
 
@@ -96,22 +150,161 @@ img {
 .property {
   width: 100%;
   position: relative;
+  /* padding: 2em; */
+}
+
+.addressGridIndex {
+  padding-left: 3px;
+}
+
+.imgAndData {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.container {
+  height: 100vw;
+  background-color: #afafaf;
+}
+
+.containerForProfileFunctions {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imgIndex {
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+}
+
+.profileWelcome {
+  color: #06a4b7;
 }
 
 #signupForm {
   display: grid;
   justify-content: center;
   align-content: center;
+  text-align: center;
   grid-gap: 10px;
 }
 
 button {
-  border-radius: 5px;
+  width: 30%;
   padding: 10px 5px;
   border: none;
-  background-color: #41d873;
+  background-color: #06a4b7;
+  -webkit-font-smoothing: antialiased;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  /* width: auto; */
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  height: 42px;
+  line-height: 22px;
+  /* color: rgb(255, 255, 255); */
+  /* background-color: rgb(0, 106, 255); */
+  margin: 0px;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-radius: 3px;
+  transition: all 0.2s ease 0s;
+  border-color: rgb(0, 106, 255);
 }
 
+#profileContainer {
+  border-right: solid 1px #06a4b7;
+}
+
+.propertiesTitle {
+  text-align: center;
+  background-color: aliceblue;
+  color: #06a4b7;
+  padding: 10px;
+}
+
+.bbsp {
+  display: grid;
+  grid-template-columns: 0.3fr 0.1fr 0.1fr 0.1fr;
+}
+
+.imgProfileProperty {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+#imgProfile {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.linksPropertyContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  padding: 5px;
+}
+
+#formGridUpload {
+  display: grid;
+  grid-gap: 10px;
+}
+
+#formGridUpload input {
+  width: 50%;
+}
+
+.idProfile {
+  font-size: 80%;
+}
+
+.alignText {
+  text-align: center;
+}
+
+.loginWelcome {
+  text-align: center;
+  /* color: #06a4b7; */
+}
+
+.addressGrid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+#uploadImg {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+
+#uploadImg input {
+  margin: auto;
+}
+
+#uploadImg button {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
 /*      FORM VALIDATION         */
 
 label {
@@ -185,10 +378,17 @@ input.error {
   display: grid;
   grid-template-columns: 2fr 2fr;
   background-color: aliceblue;
+  padding: 2em;
+  grid-gap: 2em;
 }
 
 .active {
   box-shadow: 2px 2px 5px 2px #d64933;
+}
+
+.activeMenu {
+  font-weight: bold;
+  font-size: 120%;
 }
 
 .marker {
@@ -268,7 +468,7 @@ input.error {
 }
 
 .error {
-  border: 2px solid red;
+  border: 2px solid #d64933;
 }
 
 .notification {
@@ -290,7 +490,7 @@ input.error {
 
 .roundDot {
   border-radius: 50%;
-  background-color: red;
+  background-color: #d64933;
   width: 10px;
   height: 10px;
   margin-top: 5px;
@@ -307,6 +507,10 @@ input.error {
   justify-content: center;
 }
 
+.priceIndex {
+  font-weight: bold;
+}
+
 .forRent {
   display: grid;
   grid-template-columns: 0.2fr 3fr;
@@ -320,4 +524,54 @@ input.error {
 
 .borderSeparator {
   border-right: 1px solid black;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  /* visibility: hidden; */
+  /* opacity: 0; */
+}
+/* .overlay:target {
+  visibility: visible;
+  opacity: 1;
+} */
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #d64933;
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  text-align: center;
 }

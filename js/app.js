@@ -106,18 +106,20 @@ function checkIfLiked(user) {
   if (user.userType == "agent") {
     return;
   }
+  console.log({ user });
   let svgsForLikes = document.querySelectorAll("svg");
-  let usersLikes = user.liked;
-  console.log({ usersLikes });
+
   console.log({ svgsForLikes });
-  usersLikes.forEach(like => {
-    svgsForLikes.forEach(svgLike => {
-      if (like == svgLike.id) {
-        console.log("there is a match", like);
-        svgLike.classList.add("forPath");
-      }
+  if (user.liked.length) {
+    user.liked.forEach(like => {
+      svgsForLikes.forEach(svgLike => {
+        if (like == svgLike.id) {
+          console.log("there is a match", like);
+          svgLike.classList.add("forPath");
+        }
+      });
     });
-  });
+  }
 }
 
 async function init() {

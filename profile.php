@@ -21,59 +21,63 @@ if (!$_SESSION) {
 </head>
 
 <body>
-  <?php require_once(__DIR__ . '/components/nav.php'); ?>
+  <?php
+  $sActive = 'Profile';
+  require_once(__DIR__ . '/components/nav.php'); ?>
 
   <div class="gridContainer">
     <div id="profileContainer">
+      <div class="containerForProfileFunctions">
+        <a href="logout.php">LOGOUT</a>
+        <a href="update-profile.php">Update profile</a>
+        <!-- <a href='delete-profile.php?id='> <button id="deleteProfile">Delete profile</button></a> -->
 
-      <?php
-      echo '
-  <h1>Welcome ' . $_SESSION['user']->name . ' </h1>
-  <h2> id : ' . $_SESSION['user']->id . ' </h2>
-  <h2>email: ' . $_SESSION['user']->email . '</h2>
-  <div class="fullName">
-    <h2>name: ' . $_SESSION['user']->name . '</h2>
-    <h2>last name: ' . $_SESSION['user']->lastName . '</h2>
-  </div>
-  <img id="imgProfile" src="img/' . $_SESSION['user']->img . '" alt=""> <form  enctype="multipart/form-data" method="POST" id="uploadImg" ><input type="file" name="img" /><button  >Upload image</button></form>
-  <a href="delete-profile.php?id= ' . $_SESSION['user']->id . '"> <button id="deleteProfile">Delete profile</button></a>
+        <?php
+        echo '
+
+      <a href="delete-profile.php?id= ' . $_SESSION['user']->id . '"> Delete profile</a></div>
+<div class="imgAndData">
+ <div> <div id="imgProfile" style="background-image: url(img/' . $_SESSION['user']->img . ')"></div>
+   <form  enctype="multipart/form-data" method="POST" id="uploadImg" ><input type="file" name="img" /><button  >Update image</button></form></div>
+   <div class="personalDetails"> <h1 class="profileWelcome">Welcome ' . $_SESSION['user']->name . ' ' . $_SESSION['user']->lastName . '  </h1>
+   <h2 class="idProfile"> id : ' . $_SESSION['user']->id . ' </h2>
+   <h2 class="idProfile">email: ' . $_SESSION['user']->email . '</h2></div></div>
+ 
   
   ';
 
+        ?>
+
+      </div>
+
+      <?php
+      if ($_SESSION['user']->userType == "agent") {
+        include_once(__DIR__ . '/components/ifAgent.php');
+        ?>
+
+
+      <?php
+      } else {
+        // NOT AGENT
+        include_once(__DIR__ . '/components/ifUser.php');
+        ?>
+
+      <?php
+      }
+      // if (!$_GET['email']) {
+      //   header('location: signup.php');
+      // }
+      // echo "welcome profile {$_GET['name']} ";
+
+
       ?>
-      <a href="update-profile.php"><button>Update profile</button></a>
-      <!-- <a href='delete-profile.php?id='> <button id="deleteProfile">Delete profile</button></a> -->
-      <a href="logout.php"><button>LOGOUT</button></a>
-    </div>
-
-    <?php
-    if ($_SESSION['user']->userType == "agent") {
-      include_once(__DIR__ . '/components/ifAgent.php');
-      ?>
-
-
-    <?php
-    } else {
-      // NOT AGENT
-      include_once(__DIR__ . '/components/ifUser.php');
-      ?>
-
-    <?php
-    }
-    // if (!$_GET['email']) {
-    //   header('location: signup.php');
-    // }
-    // echo "welcome profile {$_GET['name']} ";
-
-
-    ?>
 
 
 
 
 
 
-    <script src="js/profile.js"></script>
+      <script src="js/profile.js"></script>
 
 </body>
 

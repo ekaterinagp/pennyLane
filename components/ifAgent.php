@@ -1,21 +1,21 @@
 <div id="uploadProperty">
-  <h2>Upload new property</h2>
-  <form action="upload-property.php" method="POST" enctype="multipart/form-data">
+  <h2 class="profileWelcome">Upload new property</h2>
+  <form id="formGridUpload" method="POST" enctype="multipart/form-data">
 
-    <input type="file" name="imageProperty[]" multiple>
+
     <input type="text" placeholder="price" name="price">
     <input type="text" placeholder="m2" name="size">
+    <input type="text" placeholder="zip" name="zip">
     <input type="text" placeholder="street" name="street">
     <input type="text" placeholder="number" name="number">
-    <input type="text" placeholder="bedrooms" name="beds">
+    <input type="text" placeholder="bedrooms" name="bed">
     <input type="text" placeholder="bathrooms" name="bath">
-    <input type="text" placeholder="zip" name="zip">
-
-    <button>Upload property</button>
+    <input type="file" name="imageProperty[]" multiple>
+    <button id="uploadBtnProperty"> Upload property</button>
   </form>
 </div>
 </div>
-<h2>Your properties</h2>
+<h2 class="propertiesTitle">Your properties</h2>
 <div id="agentProperties">
 
   <?php
@@ -32,17 +32,20 @@
       // }
 
       $strBluePrint = '<div class="property">
+     <div class="linksPropertyContainer">
+     <a href="update-property.php?id={{id}}">Update {{street}} {{number}}</a>
+      <a href="delete-property.php?id={{id}}">Delete {{street}} {{number}} </a>
+     </div>
+     <div class="imgProfileProperty" style="background-image: url(img/{{path}}) "></div>
+     <div class="bbsp "> <div class="priceIndex borderSeparator "> {{price}} dkk</div>
+    
+        <div class="borderSeparator alignText">Bds {{bed}} </div>
+        <div class="borderSeparator alignText">Ba {{bath}} </div>
+        <div class="sizeIndex alignText" > {{size}} m2</div></div>
+   
+   <div class="addressGrid">    <p> {{zip}} {{street}} {{number}} </p> <a href="property.php?id={{id}}" id="detailsBtn">More details...</a></div>
+       
         
-      <img src="img\{{path}}">
-      <div>price {{price}}</div>
-        <div>zip {{zip}}</div>
-        <div>Address {{street}}{{number}}</div>
-        <div>Size {{size}} m2</div>
-        <div>Bedrooms {{beds}} </div>
-        <div>Bathrooms {{bath}} </div>
-        <a href="property.php?id={{id}}" id="detailsBtn">Details</a>
-        <button><a href="delete-property.php?id={{id}}">Delete</a></button>
-        <button><a href="update-property.php?id={{id}}">Update</a></button>
       </div>';
 
       $sCopyBluePrint = $strBluePrint;
@@ -52,7 +55,7 @@
       $sCopyBluePrint = str_replace('{{size}}', $jProperty->size, $sCopyBluePrint);
       $sCopyBluePrint = str_replace('{{number}}', $jProperty->number, $sCopyBluePrint);
       $sCopyBluePrint = str_replace('{{zip}}', $jProperty->zip, $sCopyBluePrint);
-      $sCopyBluePrint = str_replace('{{beds}}', $jProperty->bed, $sCopyBluePrint);
+      $sCopyBluePrint = str_replace('{{bed}}', $jProperty->bed, $sCopyBluePrint);
       $sCopyBluePrint = str_replace('{{bath}}', $jProperty->bath, $sCopyBluePrint);
       $sCopyBluePrint = str_replace('{{id}}', $jProperty->id, $sCopyBluePrint);
 

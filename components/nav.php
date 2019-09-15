@@ -1,10 +1,11 @@
 <nav>
 
   <div class="logoMenu"> <img src="img/logo.png">
-    <div class="menuItems"><a href="index.php">Home</a>
-      <a href="profile.php">Profile</a>
-      <a href="login.php">Login</a>
-      <a href="signup.php">Signup</a></div>
+    <div class="menuItems">
+      <a <?= $sActive == 'Home' ? 'class="activeMenu"' : ''; ?>href="index.php">Home</a>
+      <a <?= $sActive == 'Profile' ? 'class="activeMenu"' : ''; ?>href="profile.php">Profile</a>
+      <a <?= $sActive == 'Login' ? 'class="activeMenu"' : ''; ?> href="login.php">Login</a>
+      <a <?= $sActive == 'Signup' ? 'class="activeMenu"' : ''; ?> href="signup.php">Signup</a></div>
 
   </div>
   <div>

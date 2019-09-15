@@ -71,6 +71,11 @@ if ($_POST) {
   $user->userType = $strUserType;
   $user->img = 'default.png';
   $user->id = uniqid();
+  $user->active = "1";
+  if ($strUserType == "user") {
+    $user->liked = [];
+  }
+
 
 
   $sDataUsers = file_get_contents(__DIR__ . '/data/users.json');
@@ -109,15 +114,17 @@ function sendErrorMessage($txtError, $iLineNumber)
 
 <body>
 
-  <?php require_once(__DIR__ . '/components/nav.php'); ?>
+  <?php
+  $sActive = 'Signup';
+  require_once(__DIR__ . '/components/nav.php'); ?>
 
 
   <div class="container">
 
     <form id="signupForm" method="POST">
 
-      <label for="user"><input type="radio" value="user" name="userType">Sign up as a user</label>
-      <label for="agent"><input type="radio" value="agent" name="userType">Sign up as an agent</label>
+      <div class="labels"> <label for="user"><input type="radio" value="user" name="userType">Sign up as a user</label>
+        <label for="agent"><input type="radio" value="agent" name="userType">Sign up as an agent</label></div>
       <div>
         <label for="name"><input required minlength="2" maxlength="20" type="text" data-type="string" name="inputName" placeholder="First name">
           <div class="errorMessage">Name must be more than 1 and less than 20 letters</div>

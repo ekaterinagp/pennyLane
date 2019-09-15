@@ -72,11 +72,16 @@ if ($_POST) {
 
 <body>
 
-  <?php require_once(__DIR__ . '/components/nav.php'); ?>
+  <?php
+  $sActive = 'Login';
+  require_once(__DIR__ . '/components/nav.php'); ?>
 
 
   <div class="container">
-
+    <div class="loginWelcome">
+      <h1>Welcome to Penny Lane Realty!</h1>
+      <h2>Please log in</h2>
+    </div>
     <form id="loginForm" method="POST">
       <div>
         <label for="email"><input required type="email" data-type="email" name="inputEmail" placeholder="email">

@@ -1,74 +1,107 @@
 [
-  {
-    "name": "Honey",
-    "lastName": "Bunny",
-    "email": "hon@b.dk",
-    "password": "12345aaa",
-    "userType": "agent",
-    "id": "5d7931b5bd92e",
-    "img": "5d7b337cef288.jpg",
-    "active": "1"
-  },
-  {
-    "name": "Dan",
-    "lastName": "Dan",
-    "email": "dan@b.dk",
-    "password": "11111111",
-    "userType": "agent",
-    "id": "5d7b2b74886ce",
-    "img": "5d7b2a2c96356.png",
-    "active": "1"
-  },
-  {
-    "name": "John",
-    "lastName": "Awsome",
-    "email": "iamcool@b.dk",
-    "password": "coolcool",
-    "userType": "agent",
-    "img": "5d7b2b5b166e1.jpg",
-    "id": "5d7b2d72a1800",
-    "active": "1"
-  },
-  {
-    "name": "Anna",
-    "lastName": "Anderson",
-    "email": "anna@a.dk",
-    "password": "annaanna",
-    "userType": "user",
-    "img": "5d7cf4011ced1.jpg",
-    "id": "5d7b2dfec6ef1",
-    "active": "1",
-    "liked": ["5d7a40868bc45", "5d7b30718132d", "5d7a442341c72"]
-  },
-  {
-    "name": "Peter",
-    "lastName": "Peterson",
-    "email": "pet@p.dk",
-    "password": "11111111",
-    "userType": "agent",
-    "img": "5d7b2d3d8fb74.png",
-    "id": "5d7b30718132d",
-    "active": "1"
-  },
-  {
-    "name": "wan",
-    "lastName": "wan",
-    "email": "wan@wan.dk",
-    "password": "22222222",
-    "userType": "agent",
-    "img": "5d7cfa18ea65b.png",
-    "id": "5d7b4150cf0ab",
-    "active": "1"
-  },
-  {
-    "name": "Ella",
-    "lastName": "Elliason",
-    "email": "ella@a.dk",
-    "password": "ellaella",
-    "userType": "user",
-    "img": "5d7b2bafd5ce7.jpg",
-    "id": "5d7b2dfgc6ef1",
-    "active": "1",
-    "liked": ["5d7a442341c72", "5d7a35b735d35", "5d7a40868bc45"]
-  }
+    {
+        "name": "Honey",
+        "lastName": "Bunny",
+        "email": "hon@b.dk",
+        "password": "12345aaa",
+        "userType": "agent",
+        "id": "5d7931b5bd92e",
+        "img": "5d7b337cef288.jpg",
+        "active": "1"
+    },
+    {
+        "name": "Dan",
+        "lastName": "Dan",
+        "email": "dan@b.dk",
+        "password": "11111111",
+        "userType": "agent",
+        "id": "5d7b2b74886ce",
+        "img": "5d7b2a2c96356.png",
+        "active": "1"
+    },
+    {
+        "name": "John",
+        "lastName": "Awsome",
+        "email": "iamcool@b.dk",
+        "password": "coolcool",
+        "userType": "agent",
+        "img": "5d7b2b5b166e1.jpg",
+        "id": "5d7b2d72a1800",
+        "active": "1"
+    },
+    {
+        "name": "Anna",
+        "lastName": "Anderson",
+        "email": "anna@a.dk",
+        "password": "annaanna",
+        "userType": "user",
+        "img": "5d7cf4011ced1.jpg",
+        "id": "5d7b2dfec6ef1",
+        "active": "1",
+        "liked": [
+            "5d7a40868bc45",
+            "5d7b30718132d",
+            "5d7a442341c72"
+        ]
+    },
+    {
+        "name": "Peter",
+        "lastName": "Peterson",
+        "email": "pet@p.dk",
+        "password": "11111111",
+        "userType": "agent",
+        "img": "5d7b2d3d8fb74.png",
+        "id": "5d7b30718132d",
+        "active": "1"
+    },
+    {
+        "name": "wan",
+        "lastName": "wan",
+        "email": "wan@wan.dk",
+        "password": "22222222",
+        "userType": "agent",
+        "img": "5d7cfa18ea65b.png",
+        "id": "5d7b4150cf0ab",
+        "active": "1"
+    },
+    {
+        "name": "Ella",
+        "lastName": "Elliason",
+        "email": "ella@a.dk",
+        "password": "ellaella",
+        "userType": "user",
+        "img": "5d7b2bafd5ce7.jpg",
+        "id": "5d7b2dfgc6ef1",
+        "active": "1",
+        "liked": [
+            "5d7a442341c72",
+            "5d7a35b735d35",
+            "5d7a40868bc45"
+        ]
+    },
+    {
+        "name": "alla",
+        "lastName": "larsen",
+        "email": "alla@alla.com",
+        "password": "allaalla",
+        "userType": "user",
+        "img": "default.png",
+        "id": "5d7e66b4d1a02",
+        "active": "1",
+        "liked": []
+    },
+    {
+        "name": "Ed",
+        "lastName": "Edo",
+        "email": "ed@ed.com",
+        "password": "12345678",
+        "userType": "user",
+        "img": "5d7e695970f96.jpg",
+        "id": "5d7e67835d289",
+        "active": "1",
+        "liked": [
+            "5d7a40868bc45",
+            "5d7a35b735d35"
+        ]
+    }
 ]

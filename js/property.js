@@ -42,13 +42,12 @@ function fillInData(data) {
     if (id == property.id) {
       console.log({ property });
       let address = document.querySelector("#addressProperty");
-      address.textContent =
-        "Address" + " " + property.street + " " + property.number;
+      address.textContent = property.street + " " + property.number;
       let zip = document.querySelector("#zipProperty");
-      zip.textContent = "Zipcode" + " " + property.zip;
+      zip.textContent = property.zip;
       let price = document.querySelector("#priceProperty");
-      price.textContent = "Price" + " " + property.price + "" + "dkk";
-      let size = document.querySelectorAll("#sizeProperty");
+      price.textContent = property.price + "" + "dkk";
+      let size = document.querySelector("#sizeProperty");
       size.textContent = property.size + " " + "m2";
       let beds = document.querySelector("#bedsProperty");
       beds.textContent = property.bed + " beds";
