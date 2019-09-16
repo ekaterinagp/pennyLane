@@ -606,40 +606,6 @@
         }
     },
     {
-        "price": "23007777",
-        "img": [
-            "5d7f2cd881bb1.jpg",
-            "5d7f2cd882092.jpg",
-            "5d7f2cd882644.jpg",
-            "5d7f2cd882ac5.jpg"
-        ],
-        "street": "Don",
-        "number": "3",
-        "bed": "1",
-        "bath": "1",
-        "size": "1234",
-        "zip": "1234",
-        "agentName": "Honey Bunny",
-        "agentID": "5d7931b5bd92e",
-        "id": "5d7e20b78324a",
-        "marker": {
-            "geometry": {
-                "coordinates": [
-                    12.556198,
-                    55.71646
-                ],
-                "type": "Point"
-            },
-            "properties": {
-                "iconSize": [
-                    60,
-                    60
-                ]
-            },
-            "type": "Feature"
-        }
-    },
-    {
         "price": 23000,
         "img": [
             "5d7e2d4fbdacd.jpg",
