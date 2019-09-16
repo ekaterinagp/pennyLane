@@ -63,6 +63,9 @@ function fetchSessionUser() {
       })
       .then(function(response) {
         console.log({ response });
+        if (response.status == "0") {
+          return;
+        }
         resolve(response);
       });
   });

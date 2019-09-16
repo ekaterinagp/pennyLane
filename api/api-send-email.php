@@ -35,7 +35,7 @@ try {
   $mail->Port       = 587;                                    // TCP port to connect to
 
   //Recipients
-  $mail->setFrom('wkea108@gmail.com', 'You liked the property');
+  $mail->setFrom('wkea108@gmail.com', 'You saved the property');
   $mail->addAddress('wkea108@gmail.com', 'Penny Lane');     // Add a recipient
   // $mail->addAddress('ellen@example.com');               // Name is optional
   // $mail->addReplyTo('dummy@gmail.com', 'Information');

@@ -1,6 +1,10 @@
 <?php
 
 session_start();
-$user = $_SESSION['user'];
+if (!empty($_SESSION['user'])) {
+  $user = $_SESSION['user'];
 
-echo json_encode($user);
+  echo json_encode($user);
+} else {
+  echo '{"status":"0"}';
+}
