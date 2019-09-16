@@ -45,7 +45,7 @@ a {
 }
 .containerOneProperty {
   background-color: white;
-  margin: 10% auto;
+  margin: 1% auto;
   width: 50%;
 }
 
@@ -172,6 +172,7 @@ img {
 .container {
   height: 100vw;
   background-color: #afafaf;
+  box-shadow: 0px 1px 10px #999;
 }
 
 #backBtn {
@@ -238,6 +239,25 @@ button {
   transition: all 0.2s ease 0s;
 }
 
+#updateFormOutside {
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  background-color: white;
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 3em;
+  width: 50%;
+}
+
+#updateFormOutside label {
+  opacity: 1;
+}
+
+#updateFormOutside input {
+  width: 30%;
+}
+
 #profileContainer {
   border-right: solid 1px #06a4b7;
 }
@@ -295,7 +315,13 @@ button {
 
 .loginWelcome {
   text-align: center;
+  color: white;
+  padding: 1em;
   /* color: #06a4b7; */
+}
+
+.labels input {
+  margin: 5px;
 }
 
 .addressGrid {

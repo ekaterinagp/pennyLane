@@ -119,3 +119,7 @@ if (uploadBtn) {
       });
   });
 }
+
+function deleteProperty(id) {
+  console.log("id i want to delete is", id);
+}

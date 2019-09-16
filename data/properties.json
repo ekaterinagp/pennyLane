@@ -1,6 +1,6 @@
 [
     {
-        "price": "20000",
+        "price": "200006",
         "size": "123",
         "bed": "3",
         "bath": "1",
@@ -37,14 +37,14 @@
         }
     },
     {
-        "price": "2300",
+        "price": "24000",
         "size": "150",
         "bed": "2",
         "bath": "3",
         "img": [
-            "5d7e76bd66c4a.jpg",
-            "5d7e76bd670a7.jpg",
-            "5d7e76bd67435.jpg"
+            "5d7f3a17df2f7.jpg",
+            "5d7f3a17df761.jpg",
+            "5d7f3a17dfb10.jpg"
         ],
         "street": "Faelledvej",
         "number": "17B 2tv",
@@ -606,10 +606,12 @@
         }
     },
     {
-        "price": 2300,
+        "price": "23007777",
         "img": [
-            "5d7e20b782085.jpg",
-            "5d7e20b782b54.jpg"
+            "5d7f2cd881bb1.jpg",
+            "5d7f2cd882092.jpg",
+            "5d7f2cd882644.jpg",
+            "5d7f2cd882ac5.jpg"
         ],
         "street": "Don",
         "number": "3",

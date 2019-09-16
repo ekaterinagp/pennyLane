@@ -116,5 +116,18 @@
         "liked": [
             "5d7b2cbc9f422"
         ]
+    },
+    {
+        "name": "Elisabet",
+        "lastName": "Bals",
+        "email": "bals@glwed.com",
+        "password": "password",
+        "userType": "user",
+        "img": "default.png",
+        "id": "5d7f396cb649c",
+        "active": "1",
+        "liked": [
+            "5d7a442341c72"
+        ]
     }
 ]

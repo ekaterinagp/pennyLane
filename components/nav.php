@@ -8,7 +8,7 @@
         <a <?= $sActive == 'Login' ? 'class="activeMenu"' : ''; ?> href="login.php">Login</a>
         <a <?= $sActive == 'Signup' ? 'class="activeMenu"' : ''; ?> href="signup.php">Signup</a>
       <?php } else { ?>
-        <a href="logout.php">LOGOUT</a>
+        <a href="logout.php">Logout</a>
       <?php
       } ?>
     </div>
