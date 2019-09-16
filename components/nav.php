@@ -1,6 +1,6 @@
 <nav>
 
-  <div class="logoMenu"> <img src="img/logo.png">
+  <div class="logoMenu"> <a href="index.php"><img src="img/logo.png"></a>
     <div class="menuItems">
       <a <?= $sActive == 'Home' ? 'class="activeMenu"' : ''; ?>href="index.php">Home</a>
       <a <?= $sActive == 'Profile' ? 'class="activeMenu"' : ''; ?>href="profile.php">Profile</a>
